@@ -1,12 +1,13 @@
 import { FC } from 'react';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 
 const Tiles3: FC = () => {
   return (
     <div className="row gx-md-5 gy-5">
       <div className="col-md-6">
         <figure className="rounded mt-md-10 position-relative">
-          <img src="/img/photos/g5.jpg" srcSet="/img/photos/g5@2x.jpg 2x" alt="" />
+          <Image src="/img/photos/g5.jpg" quality={50} width={375} height={375} alt="Contact image 1" />
         </figure>
       </div>
 
@@ -14,7 +15,7 @@ const Tiles3: FC = () => {
         <div className="row gx-md-5 gy-5">
           <div className="col-md-12 order-md-2">
             <figure className="rounded">
-              <img src="/img/photos/g6.jpg" srcSet="/img/photos/g6@2x.jpg 2x" alt="" />
+              <Image src="/img/photos/g6.jpg" quality={50} width={375} height={250} alt="Contact Image 2" />
             </figure>
           </div>
 

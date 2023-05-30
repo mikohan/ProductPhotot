@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Team8 } from 'components/blocks/team';
@@ -76,11 +77,12 @@ const AboutTwo: NextPage = () => {
             <div className="row text-center mb-12 mb-md-15">
               <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-n18 mt-md-n22">
                 <figure>
-                  <img
-                    alt=""
+                  <Image
+                    alt="hapy people"
+                    width={297}
+                    height={297}
                     className="w-auto"
                     src="/img/illustrations/i8.png"
-                    srcSet="/img/illustrations/i8@2x.png 2x"
                   />
                 </figure>
               </div>
