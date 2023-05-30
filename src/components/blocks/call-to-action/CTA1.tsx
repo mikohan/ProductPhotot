@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Image from 'next/image';
 
 const CTA1: FC = () => {
   return (
@@ -7,11 +8,13 @@ const CTA1: FC = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 mb-8 align-items-center">
           <div className="col-lg-7 order-lg-2">
             <figure>
-              <img
+              <Image
                 alt="analyze now"
                 className="w-auto"
                 src="/img/illustrations/i3.png"
-                srcSet="/img/illustrations/i3@2x.png 2x"
+                width={800}
+                height={578}
+                // srcSet="/img/illustrations/i3@2x.png 2x"
               />
             </figure>
           </div>

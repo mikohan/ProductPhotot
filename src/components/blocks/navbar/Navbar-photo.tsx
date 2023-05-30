@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import LinkType from 'types/link';
+import Image from 'next/image';
 import { FC, Fragment, ReactElement, useRef } from 'react';
 // -------- custom hook -------- //
 import useSticky from 'hooks/useSticky';
@@ -18,13 +19,8 @@ import Language from './partials/Language';
 import MiniCart from './partials/MiniCart';
 // -------- data -------- //
 import {
-  demos,
-  pages,
-  blogsNavigation,
-  blocksNavigation,
   projectsNavigation,
-  documentionNavigation
-} from 'data/navigation';
+} from 'data/navigation-photo';
 
 // ===================================================================
 type NavbarProps = {
@@ -42,7 +38,7 @@ type NavbarProps = {
 };
 // ===================================================================
 
-const Navbar: FC<NavbarProps> = (props) => {
+const NavbarPhoto: FC<NavbarProps> = (props) => {
   const { navClassName, info, search, social, language, button, cart, fancy, navOtherClass, stickyBox, logoAlt } =
     props;
 
@@ -65,7 +61,7 @@ const Navbar: FC<NavbarProps> = (props) => {
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<img alt="logo" src={`/img/${logo}.png`} srcSet={`/img/${logo}@2x.png 2x`} />} />
+        <NextLink href="/" title={<Image width={134} height={26} alt="logo" src={`/img/${logo}.png`} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -76,60 +72,14 @@ const Navbar: FC<NavbarProps> = (props) => {
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
-            {/* ===================== demos nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Demos" className="nav-link dropdown-toggle" />
 
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content mega-menu-scroll">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
-                    {demos.map(({ id, title, url, thumnail }) => (
-                      <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <img
-                              alt={title}
-                              src={`/img/demos/${thumnail}.jpg`}
-                              srcSet={`/img/demos/${thumnail}@2x.jpg 2x`}
-                              className="rounded lift d-none d-lg-block"
-                            />
-                            <span className="d-lg-none">{title}</span>
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <span className="d-none d-lg-flex">
-                    <i className="uil uil-direction" />
-                    <strong>Scroll to view more</strong>
-                  </span>
-                </li>
-              </ul>
+            {/* =============================== My Home item ================== */}
+            <li className="nav-item">
+              <ListItemLink href="/photo/home" title="Home" />
             </li>
-
-            {/*  ===================== pages nav item  ===================== */}
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Pages" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu">
-                {pages.map(({ id, title, children }) => {
-                  return (
-                    <li className="dropdown dropdown-submenu dropend" key={id}>
-                      <DropdownToggleLink title={title} />
-                      <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                    </li>
-                  );
-                })}
-
-                <ListItemLink href="/pricing" title="Pricing" linkClassName="dropdown-item" />
-              </ul>
-            </li>
-
             {/* ===================== projects nav item  ===================== */}
             <li className="nav-item dropdown">
-              <DropdownToggleLink title="Projects" className="nav-link dropdown-toggle" />
-
+              <DropdownToggleLink title="Portfolio" className="nav-link dropdown-toggle" />
               <div className="dropdown-menu dropdown-lg">
                 <div className="dropdown-lg-content">
                   {projectsNavigation.map(({ title, children }, i) => (
@@ -142,71 +92,17 @@ const Navbar: FC<NavbarProps> = (props) => {
               </div>
             </li>
 
-            {/* ===================== blog nav item ===================== */}
-            <li className="nav-item dropdown">
-              <DropdownToggleLink title="Blog" className="nav-link dropdown-toggle" />
-
-              <ul className="dropdown-menu">
-                {blogsNavigation.map(({ id, url, title, children }) => {
-                  if (!url && children) {
-                    return (
-                      <li className="dropdown dropdown-submenu dropend" key={id}>
-                        <DropdownToggleLink title="Blog Posts" />
-                        <ul className="dropdown-menu">{renderLinks(children)}</ul>
-                      </li>
-                    );
-                  }
-                  return <ListItemLink key={id} href={url} title={title} linkClassName="dropdown-item" />;
-                })}
-              </ul>
+            {/* =============================== About item ================== */}
+            <li className="nav-item">
+              <ListItemLink href="/photo/about" title="About" />
+            </li>
+            {/* =============================== Contacts item ================== */}
+            <li className="nav-item">
+              <ListItemLink href="/photo/home" title="Contact us" />
             </li>
 
-            {/* ===================== blocks nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Blocks" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                <li className="mega-menu-content">
-                  <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
-                    {blocksNavigation.map(({ id, thumnail, title, url }) => (
-                      <li className="col" key={id}>
-                        <Link href={url} passHref legacyBehavior>
-                          <a className="dropdown-item">
-                            <div className="rounded img-svg d-none d-lg-block p-4 mb-lg-2">
-                              <img className="rounded-0" src={thumnail} alt="" />
-                            </div>
+            {/*  ===================== pages nav item  ===================== */}
 
-                            <span>{title}</span>
-                          </a>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            {/* ===================== documentation nav item ===================== */}
-            <li className="nav-item dropdown dropdown-mega">
-              <DropdownToggleLink title="Documentation" className="nav-link dropdown-toggle" />
-              <ul className="dropdown-menu mega-menu">
-                <li className="mega-menu-content">
-                  <div className="row gx-0 gx-lg-3">
-                    <div className="col-lg-4">
-                      <h6 className="dropdown-header">Usage</h6>
-                      <ul className="list-unstyled cc-2 pb-lg-1">{renderLinks(documentionNavigation.usage)}</ul>
-
-                      <h6 className="dropdown-header mt-lg-6">Styleguide</h6>
-                      <ul className="list-unstyled cc-2">{renderLinks(documentionNavigation.styleguide)}</ul>
-                    </div>
-
-                    <div className="col-lg-8">
-                      <h6 className="dropdown-header">Elements</h6>
-                      <ul className="list-unstyled cc-3">{renderLinks(documentionNavigation.elements)}</ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
@@ -312,7 +208,7 @@ const Navbar: FC<NavbarProps> = (props) => {
 };
 
 // set deafult Props
-Navbar.defaultProps = {
+NavbarPhoto.defaultProps = {
   cart: false,
   info: false,
   social: false,
@@ -323,4 +219,4 @@ Navbar.defaultProps = {
   navClassName: 'navbar navbar-expand-lg center-nav transparent navbar-light'
 };
 
-export default Navbar;
+export default NavbarPhoto;
