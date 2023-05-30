@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import { Fragment } from 'react';
 // -------- custom component -------- //
 import { Team8 } from 'components/blocks/team';
-import { Navbar } from 'components/blocks/navbar';
+import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import { Clients1 } from 'components/blocks/clients';
 import { Process8 } from 'components/blocks/process';
@@ -51,7 +51,7 @@ const AboutTwo: NextPage = () => {
     <Fragment>
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <Navbar
+        <NavbarPhoto
           language
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
         />

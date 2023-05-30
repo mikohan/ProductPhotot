@@ -18,9 +18,11 @@ import Signup from './partials/Signup';
 import Language from './partials/Language';
 import MiniCart from './partials/MiniCart';
 // -------- data -------- //
+
 import {
+  url,
   projectsNavigation,
-} from 'data/navigation-photo';
+} from 'utils/urls'
 
 // ===================================================================
 type NavbarProps = {
@@ -61,7 +63,7 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
   const headerContent = (
     <Fragment>
       <div className="navbar-brand w-100">
-        <NextLink href="/" title={<Image width={134} height={26} alt="logo" src={`/img/${logo}.png`} />} />
+        <NextLink href={url.home()} title={<Image width={134} height={26} alt="logo" src={`/img/${logo}.png`} />} />
       </div>
 
       <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
@@ -75,7 +77,7 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
 
             {/* =============================== My Home item ================== */}
             <li className="nav-item">
-              <ListItemLink href="/photo/home" title="Home" />
+              <ListItemLink href={url.home()} title="Home" />
             </li>
             {/* ===================== projects nav item  ===================== */}
             <li className="nav-item dropdown">
@@ -94,11 +96,11 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
 
             {/* =============================== About item ================== */}
             <li className="nav-item">
-              <ListItemLink href="/photo/about" title="About" />
+              <ListItemLink href={url.about()} title="About" />
             </li>
             {/* =============================== Contacts item ================== */}
             <li className="nav-item">
-              <ListItemLink href="/photo/home" title="Contact us" />
+              <ListItemLink href={url.contact()} title="Contact us" />
             </li>
 
             {/*  ===================== pages nav item  ===================== */}
