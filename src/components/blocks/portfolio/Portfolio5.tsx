@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import useIsotope from 'hooks/useIsotope';
-import { portfolioList4 } from 'data/portfolio';
+import { portfolioList4 } from 'data/herro';
 import Image from 'next/image';
 
 const Portfolio5: FC = () => {
@@ -8,10 +8,10 @@ const Portfolio5: FC = () => {
   // filter list
   const filterList = [
     { id: 1, title: 'All', value: '*' },
-    { id: 2, title: 'Foods', value: '.foods' },
-    { id: 3, title: 'Drinks', value: '.drinks' },
-    { id: 4, title: 'Events', value: '.events' },
-    { id: 5, title: 'Product', value: '.product' }
+    { id: 2, title: 'Products', value: '.product' },
+    { id: 3, title: 'Foods', value: '.food' },
+    { id: 4, title: 'Estate', value: '.estate' },
+    { id: 5, title: 'Videos', value: '.video' }
   ];
 
   return (
@@ -20,8 +20,8 @@ const Portfolio5: FC = () => {
         <div className="container py-15 py-md-17 text-center">
           <div className="row">
             <div className="col-lg-10 col-xl-8 col-xxl-7 mx-auto mb-8">
-              <h2 className="display-5 mb-3">My Selected Shots</h2>
-              <p className="lead fs-lg">Photography is my passion and I love to turn ideas into beautiful things.</p>
+              <h2 className="display-5 mb-3">Look at Our Portfolio</h2>
+              <p className="lead fs-lg">Photography is our passion and We love to turn ideas into beautiful things.</p>
             </div>
           </div>
 

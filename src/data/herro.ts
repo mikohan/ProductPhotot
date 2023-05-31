@@ -84,4 +84,22 @@ const serviceList1 = [
     Bring your sales to the next level - let us make video for you.`
   }
 ];
-export { herroPhoto, serviceList1 };
+
+// used in the portfolio-5 block
+const portfolioList4 = [
+  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'estate' },
+  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'estate' },
+  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'food product' },
+  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'estate' },
+  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'estate' },
+  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'food' },
+  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'food product' },
+  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'product' },
+  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'estate' },
+  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'food' },
+  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'product' },
+  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'video product' },
+  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'video product' }
+];
+
+export { herroPhoto, serviceList1, portfolioList4 };
