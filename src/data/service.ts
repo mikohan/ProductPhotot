@@ -35,8 +35,8 @@ export const serviceList1 = [
   {
     id: 1,
     link: '#',
-    icon: Search,
-    title: 'SEO Services',
+    icon: Earth,
+    title: 'Product Photograpy',
     linkText: 'Learn More',
     linkType: LinkType.yellow,
     description: `Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.`

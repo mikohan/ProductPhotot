@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import { herroPhoto } from 'data/herro';
 
 const Hero1: FC = () => {
   return (
@@ -20,11 +21,9 @@ const Hero1: FC = () => {
           </div>
 
           <div className="col-md-10 offset-md-1 offset-lg-0 col-lg-5 text-center text-lg-start">
-            <h1 className="display-1 mb-5 mx-md-n5 mx-lg-0">Grow Your Business with Our Solutions.</h1>
-            <p className="lead fs-lg mb-7">
-              We help our clients to increase their website traffic, rankings and visibility in search results.
-            </p>
-            <a className="btn btn-primary rounded-pill me-2">Try It For Free</a>
+            <h1 className="display-1 mb-5 mx-md-n5 mx-lg-0">{herroPhoto.h1}</h1>
+            <p className="lead fs-lg mb-7">{herroPhoto.subheader}</p>
+            <a className="btn btn-primary rounded-pill me-2">{herroPhoto.button}</a>
           </div>
         </div>
       </div>

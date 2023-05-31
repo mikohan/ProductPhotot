@@ -3,11 +3,16 @@ export const url = {
   about: () => `/photo/about`,
   contact: () => `/photo/contact`,
   portfolio: () => `/photo/portfolio`,
-  prices: () => `/photo/prices`,
+  prices: () => `/photo/pricing`,
   services: () => `/photo/services`,
   process: () => `/photo/process`,
   policy: () => `/photo/terms`,
-  termsOfUse: () => `/photo/terms`
+  termsOfUse: () => `/photo/terms`,
+  /** Services */
+  serviceProduct: () => `/photo/product-photography`,
+  serviceFood: () => `/photo/food-photography`,
+  serviceRealEstate: () => `/photo/real-estate`,
+  serviceVideo: () => `/photo/videography`
 };
 
 export const projectsNavigation = [

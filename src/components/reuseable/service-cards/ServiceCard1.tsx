@@ -11,7 +11,7 @@ type ServiceCard1Props = {
   description: string;
   cardClassName?: string;
   iconClassName?: string;
-  Icon: (props: IconProps) => JSX.Element;
+  Icon?: (props: IconProps) => JSX.Element;
 };
 // ===============================================================
 
@@ -22,7 +22,7 @@ const ServiceCard1: FC<ServiceCard1Props> = (props) => {
     <div className="col-md-6 col-xl-3">
       <div className={`card shadow-lg ${cardClassName}`}>
         <div className="card-body">
-          <Icon className={iconClassName} />
+          {Icon ? <Icon className={iconClassName} /> : ''}
           <h4>{title}</h4>
           <p className="mb-2">{description}</p>
           <NextLink title="Learn More" href={linkUrl} className={`more hover link-${linkType}`} />

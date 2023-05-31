@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { ServiceCard1 } from 'components/reuseable/service-cards';
 // -------- data -------- //
-import { serviceList1 } from 'data/service';
+import { herroPhoto, serviceList1 } from 'data/herro';
 
 const Services1: FC = () => {
   return (
@@ -11,7 +11,8 @@ const Services1: FC = () => {
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
             <h2 className="fs-16 text-uppercase text-muted mb-3">What We Do?</h2>
             <h3 className="display-4 mb-10 px-xl-10">
-              The service we offer is specifically designed to meet your needs.
+              Our professional photos will make you customers <span className="underline-3 style-3 orange">crave</span>{' '}
+              your product!
             </h3>
           </div>
         </div>
@@ -31,7 +32,6 @@ const Services1: FC = () => {
             {serviceList1.map((item) => (
               <ServiceCard1
                 key={item.id}
-                Icon={item.icon}
                 title={item.title}
                 linkUrl={item.link}
                 linkType={item.linkType}

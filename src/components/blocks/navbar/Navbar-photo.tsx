@@ -19,10 +19,7 @@ import Language from './partials/Language';
 import MiniCart from './partials/MiniCart';
 // -------- data -------- //
 
-import {
-  url,
-  projectsNavigation,
-} from 'utils/urls'
+import { url, projectsNavigation } from 'utils/urls';
 
 // ===================================================================
 type NavbarProps = {
@@ -74,10 +71,9 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
 
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
-
             {/* =============================== My Home item ================== */}
             <li className="nav-item">
-              <ListItemLink href={url.home()} title="Home" />
+              <ListItemLink href={url.prices()} title="Pricing" />
             </li>
             {/* ===================== projects nav item  ===================== */}
             <li className="nav-item dropdown">
@@ -104,7 +100,6 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
             </li>
 
             {/*  ===================== pages nav item  ===================== */}
-
           </ul>
 
           {/* ============= show contact info in the small device sidebar ============= */}
