@@ -6,7 +6,7 @@ import { Hero1 } from 'components/blocks/hero';
 import { About1 } from 'components/blocks/about';
 import { Footer1 } from 'components/blocks/footer';
 import { NavbarPhoto } from 'components/blocks/navbar';
-import { Pricing8 } from 'components/blocks/pricing';
+import { Pricing7 } from 'components/blocks/pricing';
 import { Clients1 } from 'components/blocks/clients';
 import { Process6 } from 'components/blocks/process';
 import { Contact4 } from 'components/blocks/contact';
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         <section className="wrapper bg-light angled upper-start lower-start">
           <div className="container py-14 pt-md-17 pb-md-15">
             {/* ================== pricing ===================== */}
-            <Pricing8 />
+            <Pricing7 />
           </div>
         </section>
 

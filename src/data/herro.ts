@@ -102,4 +102,24 @@ const portfolioList4 = [
   { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'video product' }
 ];
 
-export { herroPhoto, serviceList1, portfolioList4 };
+const pricingList3 = [
+  {
+    monthlyPrice: 9,
+    yearlyPrice: 99,
+    planName: 'Basic',
+    features: ['1 Project', '100K API Access', '100MB Storage', 'Weekly Reports', '7/24 Support']
+  },
+  {
+    monthlyPrice: 19,
+    yearlyPrice: 199,
+    planName: 'Premium',
+    features: ['5 Projects', '100K API Access', '200MB Storage', 'Weekly Reports', '7/24 Support']
+  },
+  {
+    monthlyPrice: 49,
+    yearlyPrice: 499,
+    planName: 'Corporate',
+    features: ['20 Projects', '300K API Access', '500MB Storage', 'Weekly Reports', '7/24 Support']
+  }
+];
+export { herroPhoto, serviceList1, portfolioList4, pricingList3 };
