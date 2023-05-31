@@ -6,6 +6,7 @@ import SocialLinks from 'components/reuseable/SocialLinks';
 // -------- data -------- //
 import { company } from 'data/company-info';
 import footerNav from 'data/footer';
+import currentYear from 'utils/currentYear';
 
 const Footer8: FC = () => {
   return (
@@ -17,7 +18,7 @@ const Footer8: FC = () => {
               <Image className="mb-4" src="/img/logo-light.png" width={268} height={52} alt="Footer logo" />
 
               <p className="mb-4">
-                © 2023 {company.companyName} <br className="d-none d-lg-block" />
+                © {currentYear} {company.companyName} <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -29,7 +30,7 @@ const Footer8: FC = () => {
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
               <address className="pe-xl-15 pe-xxl-17">{company.companyAddress}</address>
-              <NextLink title="info@email.com" href="mailto:#" />
+              <NextLink title={company.companyEmail} href={`mailto:${company.companyEmail}`} />
               <br /> {company.companyPhone}
             </div>
           </div>

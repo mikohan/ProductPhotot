@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import { FC, Fragment } from 'react';
 import { Element, Link as ScrollLink } from 'react-scroll';
 // -------- custom component -------- //
-import { Navbar } from 'components/blocks/navbar';
+import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
@@ -29,7 +29,7 @@ const Terms: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <Navbar
+        <NavbarPhoto
           language
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
         />
