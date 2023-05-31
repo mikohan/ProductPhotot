@@ -1,9 +1,12 @@
+import { url } from 'utils/urls';
+import { aboutList1 } from './about';
+
 const footerNav = [
-  { title: 'About Us', url: '#' },
-  { title: 'Our Story', url: '#' },
-  { title: 'Projects', url: '#' },
-  { title: 'Terms of Use', url: '#' },
-  { title: 'Privacy Policy', url: '#' }
+  { title: 'About Us', url: url.about() },
+  { title: 'Contact', url: url.contact() },
+  { title: 'Projects', url: url.portfolio() },
+  { title: 'Terms of Use', url: url.termsOfUse() },
+  { title: 'Privacy Policy', url: url.policy() }
 ];
 
 export const helps = [

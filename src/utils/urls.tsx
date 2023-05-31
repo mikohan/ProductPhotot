@@ -5,7 +5,9 @@ export const url = {
   portfolio: () => `/photo/portfolio`,
   prices: () => `/photo/prices`,
   services: () => `/photo/services`,
-  process: () => `/photo/process`
+  process: () => `/photo/process`,
+  policy: () => `/photo/terms`,
+  termsOfUse: () => `/photo/terms`
 };
 
 export const projectsNavigation = [
