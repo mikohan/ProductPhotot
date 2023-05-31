@@ -7,7 +7,7 @@ const Tiles3: FC = () => {
     <div className="row gx-md-5 gy-5">
       <div className="col-md-6">
         <figure className="rounded mt-md-10 position-relative">
-          <Image src="/img/photos/g5.jpg" quality={50} width={375} height={375} alt="Contact image 1" />
+          <Image src="/img/photos/g5.jpg" priority={true} quality={50} width={375} height={375} alt="Contact image 1" />
         </figure>
       </div>
 

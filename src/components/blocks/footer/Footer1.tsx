@@ -1,9 +1,11 @@
 import { FC } from 'react';
+import Image from 'next/image';
 // -------- custom component -------- //
 import SocialLinks from 'components/reuseable/SocialLinks';
 import NextLink from 'components/reuseable/links/NextLink';
 // -------- data -------- //
 import footerNav from 'data/footer';
+import { company } from 'data/company-info';
 
 const Footer1: FC = () => {
   return (
@@ -22,10 +24,9 @@ const Footer1: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
-
+              <Image className="mb-4" src="/img/logo-light.png" width={262} height={52} alt="Footer Logo" />
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2022 {company.companyName}. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -36,9 +37,9 @@ const Footer1: FC = () => {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+              <address className="pe-xl-15 pe-xxl-17">{company.companyAddress}</address>
               <NextLink title="info@email.com" href="mailto:#" />
-              <br /> 00 (123) 456 78 90
+              <br /> {company.companyPhone}
             </div>
           </div>
 
