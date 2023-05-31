@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import useIsotope from 'hooks/useIsotope';
 import { portfolioList4 } from 'data/portfolio';
+import Image from 'next/image';
 
 const Portfolio5: FC = () => {
   const { filterKey, handleFilterKeyChange } = useIsotope();
@@ -10,7 +11,7 @@ const Portfolio5: FC = () => {
     { id: 2, title: 'Foods', value: '.foods' },
     { id: 3, title: 'Drinks', value: '.drinks' },
     { id: 4, title: 'Events', value: '.events' },
-    { id: 5, title: 'Pastries', value: '.pastries' }
+    { id: 5, title: 'Product', value: '.product' }
   ];
 
   return (

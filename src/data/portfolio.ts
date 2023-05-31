@@ -114,8 +114,8 @@ export const portfolioList4 = [
   { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'events' },
   { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'foods' },
   { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'drinks' },
-  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'foods' },
-  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'drinks' }
+  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'foods product' },
+  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'drinks product' }
 ];
 
 // used in the portfolio-8 block
