@@ -137,4 +137,29 @@ const pricingList1 = [
     features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Clean', 'Volume Discount']
   }
 ];
-export { herroPhoto, serviceList1, portfolioList4, pricingList1 };
+
+const processList2 = [
+  {
+    no: '01',
+    title: 'Shipping',
+    subtitle: 'Ship or drop-off your product to our studio. We also provide pick-up service in Los Angeles area.'
+  },
+  {
+    no: '02',
+    title: 'Photograpy your Products',
+    subtitle:
+      'Your products will be photographed on our professional sets. Your turn around time (3 business days) is guaranteed.'
+  },
+  {
+    no: '03',
+    title: 'Checking Photo Quality',
+    subtitle: 'We send to you the results of our work. You can check the quality of our work and make corrections.'
+  },
+  {
+    no: '04',
+    title: 'Finalize',
+    subtitle:
+      'After finishing the project, we will send your products back to you. And we will looking forward for your testimonial.'
+  }
+];
+export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2 };

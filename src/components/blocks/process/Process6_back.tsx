@@ -1,14 +1,13 @@
 import { FC, Fragment } from 'react';
 // -------- data -------- //
-import { processList2 } from 'data/herro';
+import { processList2 } from 'data/process';
 
 const Process6: FC = () => {
   return (
     <Fragment>
       <h2 className="display-4 mb-3">How We Do It?</h2>
       <p className="lead fs-lg mb-8">
-        We make your experience <span className="underline">stress-free</span> for you and will take care of whole
-        process.
+        We make your spending <span className="underline">stress-free</span> for you to have the perfect control.
       </p>
 
       <div className="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
