@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Price from './Price';
 import NextLink from '../links/NextLink';
+import { url } from 'utils/urls';
 
 // ================================================================
 type PricingCard1Props = {
@@ -42,8 +43,8 @@ const PricingCard1: FC<PricingCard1Props> = (props) => {
         </ul>
 
         <NextLink
-          href="#"
-          title="Choose Plan"
+          href={url.prices()}
+          title="See All Prices"
           className={`btn btn-primary ${roundedButton ? 'rounded' : 'rounded-pill'}`}
         />
       </div>
