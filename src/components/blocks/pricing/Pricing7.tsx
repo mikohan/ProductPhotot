@@ -3,7 +3,7 @@ import Switch from 'components/reuseable/Switch';
 import NextLink from 'components/reuseable/links/NextLink';
 import { PricingCard1 } from 'components/reuseable/pricing-cards';
 // -------- data -------- //
-import { pricingList1 } from 'data/pricing';
+import { pricingList1 } from 'data/herro';
 import { url } from 'utils/urls';
 
 const Pricing7: FC = () => {
@@ -12,7 +12,7 @@ const Pricing7: FC = () => {
   return (
     <div className="row gy-6 gy-lg-0 mb-10 mb-md-18">
       <div className="col-lg-4">
-        <h2 className="display-4 mt-lg-18 mb-3">Our Pricing</h2>
+        <h2 className="display-4 mt-lg-18 mb-3">Our Pricing Examples</h2>
         <p className="lead fs-lg">
           We offer <span className="underline-3 style-3 green">great prices</span>, premium and quality photos for your
           business.

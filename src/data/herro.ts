@@ -122,4 +122,19 @@ const pricingList3 = [
     features: ['20 Projects', '300K API Access', '500MB Storage', 'Weekly Reports', '7/24 Support']
   }
 ];
-export { herroPhoto, serviceList1, portfolioList4, pricingList3 };
+
+const pricingList1 = [
+  {
+    monthlyPrice: 19,
+    yearlyPrice: 199,
+    planName: 'Photo for Amazon',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
+  },
+  {
+    monthlyPrice: 49,
+    yearlyPrice: 499,
+    planName: 'Food photography',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Clean', 'Volume Discount']
+  }
+];
+export { herroPhoto, serviceList1, portfolioList4, pricingList1 };
