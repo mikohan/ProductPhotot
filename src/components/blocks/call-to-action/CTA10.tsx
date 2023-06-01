@@ -1,4 +1,7 @@
 import { FC } from 'react';
+import NextLink from 'components/reuseable/links/NextLink';
+import { url } from 'utils/urls';
+import Image from 'next/image';
 
 const CTA10: FC = () => {
   return (
@@ -6,16 +9,22 @@ const CTA10: FC = () => {
       <div className="container py-14 py-md-16">
         <div className="row mb-8">
           <div className="col-lg-8 mx-auto text-center">
-            <h2 className="fs-16 text-uppercase text-primary mb-3">Analyze Now</h2>
+            <h2 className="fs-16 text-uppercase text-primary mb-3">Get Instant Quote Now</h2>
             <h3 className="display-4 mb-0">
-              Wonder how much faster your website can go? Easily check your SEO Score now.
+              If you need more than 50 photos or just have some sweet ideas that you don’t see here, let’s discuss a
+              custom project!
             </h3>
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-5 mx-auto">
-            <form action="#">
+            <div className="d-flex justify-content-center">
+              <NextLink href={url.contact()} title="Get Started" className="btn btn-primary rounded mx-1" />
+              <NextLink href={url.contact()} title="Free Trial" className="btn btn-green rounded mx-1" />
+            </div>
+
+            {/* <form action="#">
               <div className="form-floating input-group">
                 <input type="url" className="form-control border-0" placeholder="Enter Website URL" id="analyze" />
                 <label htmlFor="analyze">Enter Website URL</label>
@@ -23,13 +32,13 @@ const CTA10: FC = () => {
                   Analyze
                 </button>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>
 
       <figure>
-        <img src="/img/photos/clouds.png" alt="" />
+        <Image width={1502} height={118} src="/img/photos/clouds.png" alt="Decorative cloud" />
       </figure>
     </section>
   );

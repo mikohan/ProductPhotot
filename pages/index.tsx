@@ -10,7 +10,7 @@ import { Pricing7 } from 'components/blocks/pricing';
 import { Clients1 } from 'components/blocks/clients';
 import { Process6 } from 'components/blocks/process';
 import { Contact4 } from 'components/blocks/contact';
-import { CTA1 } from 'components/blocks/call-to-action';
+import { CTA1, CTA2, CTA10 } from 'components/blocks/call-to-action';
 import { Testimonial1 } from 'components/blocks/testimonial';
 import { Services1, Services2 } from 'components/blocks/services';
 import PageProgress from 'components/common/PageProgress';
@@ -46,10 +46,9 @@ const Home: NextPage = () => {
             {/* ================== pricing ===================== */}
             <Pricing7 />
           </div>
+          {/* ========== call to action section ========== */}
+          <CTA10 />
         </section>
-
-        {/* ========== call to action section ========== */}
-        <CTA1 />
 
         {/* ========== our strategy and why choose us section ========== */}
         <section className="wrapper bg-light angled upper-start lower-start">
