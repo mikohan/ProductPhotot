@@ -7,6 +7,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 import footerNav from 'data/footer';
 import { company } from 'data/company-info';
 import currentYear from 'utils/currentYear';
+import { url } from 'utils/urls';
 
 const Footer1: FC = () => {
   return (
@@ -14,10 +15,10 @@ const Footer1: FC = () => {
       <div className="container pt-15 pt-md-17 pb-13 pb-md-15">
         <div className="d-lg-flex flex-row align-items-lg-center">
           <h3 className="display-4 mb-6 mb-lg-0 pe-lg-20 pe-xl-22 pe-xxl-25 text-white">
-            Join our community by using our services and grow your business.
+            Check out how proffesional photos can grow your business.
           </h3>
 
-          <NextLink href="#" title="Try It For Free" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
+          <NextLink href={url.contact()} title="Contact Us" className="btn btn-primary rounded-pill mb-0 text-nowrap" />
         </div>
 
         <hr className="mt-11 mb-12" />
@@ -30,7 +31,6 @@ const Footer1: FC = () => {
                 © {currentYear} {company.companyName}. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
-
               <SocialLinks className="nav social social-white" />
             </div>
           </div>
