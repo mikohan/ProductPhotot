@@ -1,28 +1,27 @@
 import { FC } from 'react';
+import Image from 'next/image';
+import { url } from 'utils/urls';
 
 // =================================================
 type TestimonialCard1Props = {
-  name: string;
-  review: string;
-  designation: string;
+  title: string;
+  imageUrl: string;
+  width: number;
+  height: number;
 };
 // =================================================
 
 const TestimonialCard1: FC<TestimonialCard1Props> = (props) => {
-  const { name, review, designation } = props;
+  const { title, imageUrl, width, height } = props;
 
   return (
     <div className="card shadow-lg">
       <div className="card-body">
-        <blockquote className="icon mb-0">
-          <p>“{review}”</p>
-          <div className="blockquote-details">
-            <div className="info p-0">
-              <h5 className="mb-1">{name}</h5>
-              <p className="mb-0">{designation}</p>
-            </div>
-          </div>
-        </blockquote>
+        <figure className="itooltip itooltip-light hover-scale rounded" title={title}>
+          <a href={url.portfolio()} data-glightbox={`title: ${title}`} data-gallery="project-2">
+            <Image alt={title} src={imageUrl} width={width} height={height} style={{ width: '100%', height: 'auto' }} />
+          </a>
+        </figure>
       </div>
     </div>
   );

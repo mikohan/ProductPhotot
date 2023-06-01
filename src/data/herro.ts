@@ -162,4 +162,36 @@ const processList2 = [
       'After finishing the project, we will send your products back to you. And we will looking forward for your testimonial.'
   }
 ];
-export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2 };
+
+const testimonialList1 = [
+  {
+    title: 'Coriss Ambady',
+    imageUrl: '/img/photos/cf1.jpg',
+    width: 300,
+    height: 200,
+    columnClasses: 'col-xl-5 align-self-end'
+  },
+  {
+    title: 'Coriss Ambady',
+    imageUrl: '/img/photos/cf2.jpg',
+    width: 300,
+    height: 200,
+    columnClasses: 'align-self-end'
+  },
+  {
+    title: 'Coriss Ambady',
+    imageUrl: '/img/photos/cf3.jpg',
+    width: 300,
+    height: 200,
+    columnClasses: 'col-xl-5 offset-xl-1'
+  },
+  {
+    title: 'Coriss Ambady',
+    imageUrl: '/img/photos/cf4.jpg',
+    width: 300,
+    height: 200,
+    columnClasses: 'align-self-start'
+  }
+];
+
+export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2, testimonialList1 };
