@@ -28,7 +28,7 @@ const PricingCard1: FC<PricingCard1Props> = (props) => {
           <Price duration="yr" value={yearlyPrice} classes={yearClasses} />
         </div>
 
-        <h4 className="card-title mt-2">{planName} Plan</h4>
+        <h4 className="card-title mt-2">{planName}</h4>
 
         <ul className={`icon-list ${bulletBg ? 'bullet-bg' : ''} bullet-soft-primary mt-7 mb-8`}>
           {features.map((item, i) => (
