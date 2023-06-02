@@ -87,19 +87,19 @@ const serviceList1 = [
 
 // used in the portfolio-5 block
 const portfolioList4 = [
-  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'estate' },
-  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'estate' },
-  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'food product' },
-  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'estate' },
-  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'estate' },
-  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'food' },
-  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'food product' },
-  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'product' },
-  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'estate' },
-  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'food' },
-  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'product' },
-  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'video product' },
-  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'video product' }
+  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'estate', width: 600, height: 400 },
+  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'estate', width: 600, height: 462 },
+  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'food product', width: 600, height: 789 },
+  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'estate', width: 600, height: 715 },
+  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'estate', width: 600, height: 480 },
+  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'food', width: 600, height: 396 },
+  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'food product', width: 600, height: 400 },
+  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'product', width: 600, height: 569 },
+  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'estate', width: 600, height: 449 },
+  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'food', width: 600, height: 432 },
+  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'product', width: 600, height: 793 },
+  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'video product', width: 600, height: 747 },
+  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'video product', width: 600, height: 622 }
 ];
 
 const pricingList3 = [

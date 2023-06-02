@@ -42,11 +42,11 @@ const Portfolio5: FC = () => {
             </div>
 
             <div className="row gx-md-6 gy-6 isotope">
-              {portfolioList4.map(({ category, id, image, title }) => (
+              {portfolioList4.map(({ category, id, image, title, width, height }) => (
                 <div className={`project item col-md-6 col-xl-4 ${category}`} key={id}>
                   <figure className="overlay overlay-1 rounded">
                     <a href={`/img/photos/${image}-full.jpg`} data-glightbox data-gallery="shots-group">
-                      <img src={`/img/photos/${image}.jpg`} alt={title} />
+                      <Image quality={55} src={`/img/photos/${image}.jpg`} width={width} height={height} alt={title} />
                       <span className="bg" />
                     </a>
                     <figcaption>
