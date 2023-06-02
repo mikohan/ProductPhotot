@@ -26,7 +26,7 @@ const Footer1: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <Image className="mb-4" src="/img/logo-light.png" width={262} height={52} alt="Footer Logo" />
+              <Image className="mb-4" src="/img/logo-light@2x.png" width={262} height={52} alt="Footer Logo" />
               <p className="mb-4">
                 © {currentYear} {company.companyName}. <br className="d-none d-lg-block" />
                 All rights reserved.

@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 
 // language list
-const supportLanguage = ['En', 'Bn', 'Es', 'De'];
+const supportLanguage = ['En', 'Es'];
 
 const Language: FC = () => {
   const [language, setLanguage] = useState(supportLanguage[0]);

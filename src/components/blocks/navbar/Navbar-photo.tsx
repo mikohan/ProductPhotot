@@ -18,6 +18,7 @@ import Signup from './partials/Signup';
 import Language from './partials/Language';
 import MiniCart from './partials/MiniCart';
 // -------- data -------- //
+import { company } from 'data/company-info';
 
 import { url, projectsNavigation } from 'utils/urls';
 
@@ -105,9 +106,9 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
           {/* ============= show contact info in the small device sidebar ============= */}
           <div className="offcanvas-footer d-lg-none">
             <div>
-              <NextLink title="info@email.com" className="link-inverse" href="mailto:first.last@email.com" />
+              <NextLink title={company.companyEmail} className="link-inverse" href={`mailto:${company.companyEmail}`} />
               <br />
-              <NextLink href="tel:0123456789" title="00 (123) 456 78 90" />
+              <NextLink href={`tel:${company.companyPhone}`} title={company.companyPhone} />
               <br />
               <SocialLinks />
             </div>
@@ -119,7 +120,7 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
       <div className={navOtherClass}>
         <ul className="navbar-nav flex-row align-items-center ms-auto">
           {/* ============= language dropdwown ============= */}
-          {language && <Language />}
+          {/* {language && <Language />} */}
 
           {/* ============= info button ============= */}
           {info && (
