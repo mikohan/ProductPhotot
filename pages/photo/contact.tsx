@@ -7,7 +7,8 @@ import { Footer8 } from 'components/blocks/footer';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
 import ContactForm from 'components/common/ContactForm';
-import NextLink from 'components/reuseable/links/NextLink';
+import Button from 'components/elements/NavbarButton';
+
 // -------- data -------- //
 const breadcrumb = [
   { id: 1, title: 'Home', url: '/' },
@@ -21,10 +22,7 @@ const ContactTwo: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarPhoto
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">

@@ -11,6 +11,7 @@ import Carousel from 'components/reuseable/Carousel';
 import Accordion from 'components/reuseable/accordion';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
+import Button from 'components/elements/NavbarButton';
 // -------- data -------- //
 import data from 'data/pricing-page';
 // -------- carousel breakpoint obj -------- //
@@ -23,10 +24,7 @@ const Pricing: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarPhoto
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">

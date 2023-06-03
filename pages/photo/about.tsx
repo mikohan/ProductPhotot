@@ -10,7 +10,6 @@ import { Process8 } from 'components/blocks/process';
 import Carousel from 'components/reuseable/Carousel';
 import ProgressList from 'components/common/ProgressList';
 import FigureImage from 'components/reuseable/FigureImage';
-import NextLink from 'components/reuseable/links/NextLink';
 import AccordionList from 'components/common/AccordionList';
 import { TestimonialCard2 } from 'components/reuseable/testimonial-cards';
 // -------- icons component -------- //
@@ -18,6 +17,8 @@ import Target from 'icons/lineal/Target';
 import BarChart from 'icons/lineal/BarChart';
 import Megaphone from 'icons/lineal/Megaphone';
 import SettingsThree from 'icons/lineal/SettingsThree';
+import Button from 'components/elements/NavbarButton';
+
 // -------- data -------- //
 import { testimonialList2 } from 'data/testimonial-list';
 const serviceList2 = [
@@ -52,10 +53,7 @@ const AboutTwo: NextPage = () => {
     <Fragment>
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarPhoto
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">

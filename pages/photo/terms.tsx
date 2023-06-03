@@ -7,6 +7,7 @@ import { Footer8 } from 'components/blocks/footer';
 import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
+import Button from 'components/elements/NavbarButton';
 // -------- data -------- //
 import { company } from 'data/company-info';
 import { job1Markup } from 'markups/others/job-cards';
@@ -30,10 +31,7 @@ const Terms: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarPhoto
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">
