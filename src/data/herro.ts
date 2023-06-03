@@ -89,6 +89,17 @@ const serviceList1 = [
   }
 ];
 
+// used in the portfolio-1 block
+export const portfolioList1 = [
+  '/img/photos/pp10.jpg',
+  '/img/photos/pp11.jpg',
+  '/img/photos/pp12.jpg',
+  '/img/photos/pp13.jpg',
+  '/img/photos/pp14.jpg',
+  '/img/photos/pp15.jpg',
+  '/img/photos/pp16.jpg'
+];
+
 // used in the portfolio-5 block
 const portfolioList4 = [
   { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'estate', width: 600, height: 400 },

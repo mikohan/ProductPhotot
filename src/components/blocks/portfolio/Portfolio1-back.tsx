@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import Carousel from 'components/reuseable/Carousel';
 // -------- data -------- //
-import { portfolioList1 } from 'data/herro';
+import { portfolioList1 } from 'data/portfolio';
 import Link from 'next/link';
 import { url } from 'utils/urls';
 
