@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import { herroPhoto } from 'data/herro';
+import Contact from 'components/blocks/navbar/partials/Contact';
 
 const Hero1: FC = () => {
   return (
@@ -24,6 +25,15 @@ const Hero1: FC = () => {
             <h1 className="display-1 mb-5 mx-md-n5 mx-lg-0">{herroPhoto.h1}</h1>
             <p className="lead fs-lg mb-7">{herroPhoto.subheader}</p>
             <a className="btn btn-primary rounded-pill me-2">{herroPhoto.button}</a>
+
+            <button
+              className="btn btn-primary rounded-pill mx-1 mb-2 mb-md-0"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-contact"
+            >
+              Get Instant Quote
+            </button>
+            <Contact />
           </div>
         </div>
       </div>

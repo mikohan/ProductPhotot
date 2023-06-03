@@ -73,9 +73,9 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
           <ul className="navbar-nav">
             {/* =============================== My Home item ================== */}
-            <li className="nav-item">
-              <ListItemLink href={url.prices()} title="Pricing" />
-            </li>
+            <ListItemLink href={url.home()} title="Home" />
+            {/* =============================== My Home item ================== */}
+            <ListItemLink href={url.prices()} title="Pricing" />
             {/* ===================== projects nav item  ===================== */}
             <li className="nav-item dropdown">
               <DropdownToggleLink title="Portfolio" className="nav-link dropdown-toggle" />
@@ -92,13 +92,9 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
             </li>
 
             {/* =============================== About item ================== */}
-            <li className="nav-item">
-              <ListItemLink href={url.about()} title="About" />
-            </li>
+            <ListItemLink href={url.about()} title="About" />
             {/* =============================== Contacts item ================== */}
-            <li className="nav-item">
-              <ListItemLink href={url.contact()} title="Contact us" />
-            </li>
+            <ListItemLink href={url.contact()} title="Contact us" />
 
             {/*  ===================== pages nav item  ===================== */}
           </ul>
