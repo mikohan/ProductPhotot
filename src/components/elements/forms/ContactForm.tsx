@@ -54,7 +54,11 @@ const ContactForm: FC = () => {
           />
           <label htmlFor="textArea">Describe your project</label>
         </div>
-        <button type="submit" className="btn btn-primary rounded-pill btn-login w-100 mb-2 mt-5">
+        <button
+          type="submit"
+          className="btn btn-primary rounded-pill btn-login w-100 mb-2 mt-5"
+          data-bs-dismiss="modal"
+        >
           Send Request
         </button>
       </form>

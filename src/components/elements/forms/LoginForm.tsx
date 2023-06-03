@@ -22,18 +22,18 @@ const LoginForm: FC = () => {
           <input
             type="email"
             value={email}
-            id="loginEmail"
+            id="loginEmail1"
             placeholder="Email"
             className="form-control"
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label htmlFor="loginEmail">Email</label>
+          <label htmlFor="loginEmail1">Email</label>
         </div>
 
         <div className="form-floating password-field mb-4">
           <input
             value={password}
-            id="loginPassword"
+            id="loginPassword1"
             placeholder="Password"
             className="form-control"
             type={visiblePassword ? 'text' : 'password'}
@@ -43,7 +43,7 @@ const LoginForm: FC = () => {
             <i className={`uil  ${visiblePassword ? 'uil-eye-slash' : 'uil-eye'}`} />
           </span>
 
-          <label htmlFor="loginPassword">Password</label>
+          <label htmlFor="loginPassword1">Password</label>
         </div>
 
         <button type="submit" className="btn btn-primary rounded-pill btn-login w-100 mb-2">
