@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Carousel from 'components/reuseable/Carousel';
 // -------- data -------- //
 import { portfolioList1 } from 'data/portfolio';
+import Link from 'next/link';
+import { url } from 'utils/urls';
 
 const Portfolio1: FC = () => {
   const carouselBreakpoints = {
@@ -17,7 +19,9 @@ const Portfolio1: FC = () => {
         <Carousel grabCursor breakpoints={carouselBreakpoints}>
           {portfolioList1.map((item) => (
             <figure className="rounded" key={item}>
-              <Image width={900} height={650} src={item} alt="project" style={{ width: '100%', height: 'auto' }} />
+              <Link href={url.portfolio()}>
+                <Image width={900} height={650} src={item} alt="project" style={{ width: '100%', height: 'auto' }} />
+              </Link>
             </figure>
           ))}
         </Carousel>

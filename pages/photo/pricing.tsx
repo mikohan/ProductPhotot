@@ -12,6 +12,7 @@ import Accordion from 'components/reuseable/accordion';
 import PageProgress from 'components/common/PageProgress';
 import NextLink from 'components/reuseable/links/NextLink';
 import Button from 'components/elements/NavbarButton';
+import { Portfolio1 } from 'components/blocks/portfolio';
 // -------- data -------- //
 import data from 'data/pricing-page';
 // -------- carousel breakpoint obj -------- //
@@ -33,9 +34,10 @@ const Pricing: NextPage = () => {
           <div className="container pt-10 pb-20 pt-md-14 pb-md-22 text-center">
             <div className="row">
               <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                <h1 className="display-1 mb-3">Our Pricing</h1>
+                <h1 className="display-1 mb-3">Our Sample Pricing</h1>
                 <p className="lead mb-0 px-xl-10 px-xxl-13">
-                  We offer great prices, premium products and quality service for your business.
+                  On this page are shown only sample prices. To discuss your project contact us - and we always will
+                  give you great discount.
                 </p>
               </div>
             </div>
@@ -48,7 +50,7 @@ const Pricing: NextPage = () => {
             <Pricing2 className="mt-n18 mt-md-n21 mb-12 mb-md-15" />
 
             {/* ========== our services section ========== */}
-            <div className="row gx-lg-8 gx-xl-12 gy-6 mb-14 mb-md-19">
+            {/* <div className="row gx-lg-8 gx-xl-12 gy-6 mb-14 mb-md-19">
               {data.serviceList.map(({ id, icon, title, description, linkUrl }) => (
                 <div className="col-lg-4" key={id}>
                   <div className="d-flex flex-row">
@@ -64,7 +66,8 @@ const Pricing: NextPage = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
+            <Portfolio1 />
 
             {/* ========== faq section ========== */}
             <div className="row">

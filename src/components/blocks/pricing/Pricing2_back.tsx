@@ -3,7 +3,7 @@ import { FC, useState } from 'react';
 import Switch from 'components/reuseable/Switch';
 import { PricingCard2 } from 'components/reuseable/pricing-cards';
 // -------- data-------- //
-import { pricingList2 } from 'data/herro';
+import { pricingList2 } from 'data/pricing';
 
 // =============================================================================
 type Pricing2Props = { className?: string };
@@ -20,11 +20,11 @@ const Pricing2: FC<Pricing2Props> = ({ className }) => {
         style={{ bottom: '0.5rem', left: '-2.5rem' }}
       />
 
-      {/* <div className="pricing-switcher-wrapper switcher">
+      <div className="pricing-switcher-wrapper switcher">
         <p className="mb-0 pe-3">Monthly</p>
         <Switch value={activeYearly} onChange={setActiveYearly} />
         <p className="mb-0 ps-3">Yearly</p>
-      </div> */}
+      </div>
 
       <div className="row gy-6 mt-3 mt-md-5">
         {pricingList2.map((item, i) => (

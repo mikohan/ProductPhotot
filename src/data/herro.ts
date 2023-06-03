@@ -1,3 +1,7 @@
+// -------- icons -------- //
+import Home from 'icons/lineal/Home';
+import BriefcaseTwo from 'icons/lineal/BriefcaseTwo';
+import ShoppingBasket from 'icons/lineal/ShoppingBasket';
 import Edit from 'icons/solid-mono/Edit';
 import Lamp from 'icons/solid-mono/Lamp';
 import Team from 'icons/lineal/Team';
@@ -123,21 +127,6 @@ const pricingList3 = [
   }
 ];
 
-const pricingList1 = [
-  {
-    monthlyPrice: 19,
-    yearlyPrice: 199,
-    planName: 'Photo for Amazon',
-    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
-  },
-  {
-    monthlyPrice: 49,
-    yearlyPrice: 499,
-    planName: 'Food photography',
-    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Clean', 'Volume Discount']
-  }
-];
-
 const processList2 = [
   {
     no: '01',
@@ -194,4 +183,43 @@ const testimonialList1 = [
   }
 ];
 
-export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2, testimonialList1 };
+const pricingList1 = [
+  {
+    monthlyPrice: 19,
+    yearlyPrice: 199,
+    planName: 'Photo for Amazon',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
+  },
+  {
+    monthlyPrice: 49,
+    yearlyPrice: 499,
+    planName: 'Food photography',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Clean', 'Volume Discount']
+  }
+];
+// used in the pricing-2 block
+const pricingList2 = [
+  {
+    Icon: ShoppingBasket,
+    monthlyPrice: 19,
+    yearlyPrice: 99,
+    planName: 'Photo for Amazon',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
+  },
+  {
+    Icon: BriefcaseTwo,
+    monthlyPrice: 49,
+    yearlyPrice: 199,
+    planName: 'Food photography',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
+  },
+  {
+    Icon: Home,
+    monthlyPrice: 69,
+    yearlyPrice: 499,
+    planName: 'Real Estate',
+    features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
+  }
+];
+
+export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2, testimonialList1, pricingList2 };

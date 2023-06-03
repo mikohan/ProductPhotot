@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import Price from './Price';
 import NextLink from '../links/NextLink';
+import { url } from 'utils/urls';
 
 // ================================================================
 type PricingCard2Props = {
@@ -28,7 +29,7 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
         <h4 className="card-title">{planName}</h4>
 
         <div className="prices text-dark">
-          <Price duration="mo" value={monthlyPrice} classes={monthClasses} />
+          <Price duration="img" value={monthlyPrice} classes={monthClasses} />
           <Price duration="yr" value={yearlyPrice} classes={yearClasses} />
         </div>
 
@@ -44,8 +45,8 @@ const PricingCard2: FC<PricingCard2Props> = (props) => {
         </ul>
 
         <NextLink
-          href="#"
-          title="Choose Plan"
+          href={url.contact()}
+          title="Contact Us for Price"
           className={`btn btn-primary ${roundedButton ? 'rounded' : 'rounded-pill'}`}
         />
       </div>
