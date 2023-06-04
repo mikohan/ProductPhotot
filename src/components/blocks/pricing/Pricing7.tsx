@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-import Switch from 'components/reuseable/Switch';
 import NextLink from 'components/reuseable/links/NextLink';
 import { PricingCard1 } from 'components/reuseable/pricing-cards';
 // -------- data -------- //
