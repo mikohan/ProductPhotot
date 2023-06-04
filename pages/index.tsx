@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
         <NavbarPhoto
-          language={false}
+          language
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
         />
       </header>
@@ -33,13 +33,11 @@ const Home: NextPage = () => {
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
         <Hero1 />
-
         <section className="wrapper bg-light angled upper-start lower-start">
           {/* ========== what we do section ========== */}
           <Services1 />
         </section>
         {/* =============== portfolio section =============== */}
-
         <Portfolio5 />
         <section className="wrapper bg-light angled upper-start lower-start">
           <div className="container py-14 pt-md-17 pb-md-15">
@@ -49,7 +47,6 @@ const Home: NextPage = () => {
           {/* ========== call to action section ========== */}
           <CTA10 />
         </section>
-
         {/* ========== our strategy and why choose us section ========== */}
         <section className="wrapper bg-light angled upper-start lower-start">
           <div className="container py-14 pt-md-17 pb-md-15">
@@ -57,16 +54,12 @@ const Home: NextPage = () => {
             {/* <About1 /> */}
           </div>
         </section>
-
         {/* ========== our team section ========== */}
         {/* <Team1 /> */}
-
         {/* ========== our solution section ========== */}
         {/* <Services2 /> */}
-
         {/* ========== testimonial section ========== */}
         <Testimonial1 />
-
         {/* ========== pricing, contact and clients section ========== */}
         <section className="wrapper bg-light angled upper-end lower-end">
           <div className="container py-14 pt-md-14 pb-md-18">

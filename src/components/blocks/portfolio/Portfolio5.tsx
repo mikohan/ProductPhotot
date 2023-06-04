@@ -2,9 +2,11 @@ import { FC } from 'react';
 import useIsotope from 'hooks/useIsotope';
 import { portfolioList4 } from 'data/herro';
 import Image from 'next/image';
+import useLightBox from 'hooks/useLightBox';
 
 const Portfolio5: FC = () => {
   const { filterKey, handleFilterKeyChange } = useIsotope();
+  useLightBox();
   // filter list
   const filterList = [
     { id: 1, title: 'All', value: '*' },
@@ -45,10 +47,14 @@ const Portfolio5: FC = () => {
               {portfolioList4.map(({ category, id, image, title, width, height }) => (
                 <div className={`project item col-md-6 col-xl-4 ${category}`} key={id}>
                   <figure className="overlay overlay-1 rounded">
-                    <a href={`/img/photos/${image}-full.jpg`} data-glightbox data-gallery="shots-group">
+                    {/* {`/img/photos/${image}-full.jpg`} */}
+                    <a href={`/img/photos/${image}-full.jpg`} data-glightbox data-gallery="portfolio5">
                       <Image quality={55} src={`/img/photos/${image}.jpg`} width={width} height={height} alt={title} />
                       <span className="bg" />
                     </a>
+                    <div className="glightbox-desc caption1">
+                      <p className="mb-0">This div will be used as the image description. HTML is supported.</p>
+                    </div>
                     <figcaption>
                       <h5 className="from-top mb-0">{title}</h5>
                     </figcaption>
