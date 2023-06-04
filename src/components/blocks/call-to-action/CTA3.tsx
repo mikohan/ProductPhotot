@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { url } from 'utils/urls';
 
 const CTA3: FC = () => {
   return (
@@ -13,7 +14,7 @@ const CTA3: FC = () => {
             <p className="lead mb-5 px-md-16 px-lg-3">
               We are trusted by over 5000+ clients. Join them by using our services and grow your business.
             </p>
-            <a href="#" className="btn btn-primary rounded-pill">
+            <a href={url.contact()} className="btn btn-primary rounded-pill">
               Join Us
             </a>
           </div>

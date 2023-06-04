@@ -198,7 +198,7 @@ const pricingList1 = [
   {
     monthlyPrice: 19,
     yearlyPrice: 199,
-    planName: 'Photo for Amazon',
+    planName: 'On-White Photos',
     features: ['Proffesional', 'High Resolution', 'True Colors', 'Eye catching', 'Volume Discount']
   },
   {
@@ -233,4 +233,69 @@ const pricingList2 = [
   }
 ];
 
-export { herroPhoto, serviceList1, portfolioList4, pricingList1, processList2, testimonialList1, pricingList2 };
+// Accordeon pricing FAQ page
+const accordionList = [
+  [
+    {
+      no: 'One',
+      expand: false,
+      heading: 'How much does it cost?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Two',
+      expand: false,
+      heading: 'Which payment methods do you accept?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Three',
+      expand: false,
+      heading: 'How can I manage my Account?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Four',
+      expand: false,
+      heading: 'Is my credit card information secure?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    }
+  ],
+  [
+    {
+      no: 'Five',
+      expand: false,
+      heading: 'How do I get my subscription receipt?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Six',
+      expand: false,
+      heading: 'Are there any discounts for people in need?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Seven',
+      expand: false,
+      heading: 'Do you offer a free trial edit?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    },
+    {
+      no: 'Eight',
+      expand: false,
+      heading: 'How do I reset my Account password?',
+      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+    }
+  ]
+];
+
+export {
+  herroPhoto,
+  serviceList1,
+  portfolioList4,
+  pricingList1,
+  processList2,
+  testimonialList1,
+  pricingList2,
+  accordionList
+};

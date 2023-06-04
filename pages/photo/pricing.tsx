@@ -14,7 +14,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 import Button from 'components/elements/NavbarButton';
 import { Portfolio1 } from 'components/blocks/portfolio';
 // -------- data -------- //
-import data from 'data/pricing-page';
+import { accordionList } from 'data/herro';
 // -------- carousel breakpoint obj -------- //
 import carouselBreakpoints from 'utils/carouselBreakpoints';
 
@@ -77,7 +77,7 @@ const Pricing: NextPage = () => {
               </p>
 
               <div className="row mb-14 mb-md-18">
-                {data.accordionList.map((items, i) => (
+                {accordionList.map((items, i) => (
                   <div className="col-lg-6 mb-0" key={i}>
                     <div className="accordion-wrapper" id="accordion">
                       {items.map((item) => (
@@ -90,7 +90,7 @@ const Pricing: NextPage = () => {
             </div>
 
             {/* ========== happy customers section ========== */}
-            <h2 className="display-4 mb-3 text-center">Happy Customers</h2>
+            {/* <h2 className="display-4 mb-3 text-center">Happy Customers</h2>
             <p className="lead text-center mb-6 px-md-16 px-lg-0">
               Customer satisfaction is our major goal. See what our customers are saying about us.
             </p>
@@ -115,7 +115,7 @@ const Pricing: NextPage = () => {
                   ))}
                 </Carousel>
               </div>
-            </div>
+            </div>*/}
           </div>
         </section>
 
