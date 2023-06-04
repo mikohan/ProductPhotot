@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { url } from 'utils/urls';
+import NextLink from 'components/reuseable/links/NextLink';
 
 const CTA3: FC = () => {
   return (
@@ -14,9 +15,7 @@ const CTA3: FC = () => {
             <p className="lead mb-5 px-md-16 px-lg-3">
               We are trusted by over 5000+ clients. Join them by using our services and grow your business.
             </p>
-            <a href={url.contact()} className="btn btn-primary rounded-pill">
-              Join Us
-            </a>
+            <NextLink href={url.contact()} title="Join Us" className="btn btn-primary rounded-pill mt-2" />
           </div>
         </div>
       </div>

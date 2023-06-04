@@ -240,25 +240,25 @@ const accordionList = [
       no: 'One',
       expand: false,
       heading: 'How much does it cost?',
-      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+      body: `Our price starts from $19 per image, but we are flexible. Contact us and we always find win-win situation together.`
     },
     {
       no: 'Two',
       expand: false,
-      heading: 'Which payment methods do you accept?',
-      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+      heading: 'Do you have any packages?',
+      body: `Yes, we have packages for ecommerce web sites like Amazon, Ebay, etc. Contact us to get the best price in US.`
     },
     {
       no: 'Three',
       expand: false,
-      heading: 'How can I manage my Account?',
-      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+      heading: 'When do I pay?',
+      body: `Fifty percent is due prior to starting work. You check the photo quality, and if you happy with that then you pay the rest fifty percent.`
     },
     {
       no: 'Four',
       expand: false,
-      heading: 'Is my credit card information secure?',
-      body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
+      heading: 'How do I pay?',
+      body: `You will receive an invoice soon after signing our work agreement.`
     }
   ],
   [
