@@ -13,7 +13,7 @@ const Portfolio5: FC = () => {
     { id: 2, title: 'Products', value: '.product' },
     { id: 3, title: 'Foods', value: '.food' },
     { id: 4, title: 'Estate', value: '.estate' },
-    { id: 5, title: 'Videos', value: '.video' }
+    { id: 5, title: 'Still Life', value: '.still' }
   ];
 
   return (
@@ -48,8 +48,14 @@ const Portfolio5: FC = () => {
                 <div className={`project item col-md-6 col-xl-4 ${category}`} key={id}>
                   <figure className="overlay overlay-1 rounded">
                     {/* {`/img/photos/${image}-full.jpg`} */}
-                    <a href={`/img/photos/${image}-full.jpg`} data-glightbox data-gallery="portfolio5">
-                      <Image quality={55} src={`/img/photos/${image}.jpg`} width={width} height={height} alt={title} />
+                    <a href={`/img/portfolio_main/${image}-full.jpg`} data-glightbox data-gallery="portfolio5">
+                      <Image
+                        quality={55}
+                        src={`/img/portfolio_main/${image}.jpg`}
+                        width={width}
+                        height={height}
+                        alt={title}
+                      />
                       <span className="bg" />
                     </a>
                     <div className="glightbox-desc caption1">

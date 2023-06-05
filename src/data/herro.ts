@@ -102,19 +102,20 @@ export const portfolioList1 = [
 
 // used in the portfolio-5 block
 const portfolioList4 = [
-  { id: 1, image: 'pf1', title: 'Fringilla Nullam', category: 'estate', width: 600, height: 400 },
-  { id: 2, image: 'pf2', title: 'Ridiculus Parturient', category: 'estate', width: 600, height: 462 },
-  { id: 3, image: 'pf3', title: 'Ornare Ipsum', category: 'food product', width: 600, height: 789 },
-  { id: 4, image: 'pf4', title: 'Nullam Mollis', category: 'estate', width: 600, height: 715 },
-  { id: 5, image: 'pf5', title: 'Euismod Risus', category: 'estate', width: 600, height: 480 },
-  { id: 6, image: 'pf6', title: 'Ridiculus Tristique', category: 'food', width: 600, height: 396 },
-  { id: 7, image: 'pf7', title: 'Sollicitudin Pharetra', category: 'food product', width: 600, height: 400 },
-  { id: 8, image: 'pf8', title: 'Tristique Venenatis', category: 'product', width: 600, height: 569 },
-  { id: 9, image: 'pf9', title: 'Cursus Fusce', category: 'estate', width: 600, height: 449 },
-  { id: 10, image: 'pf10', title: 'Consectetur Malesuada', category: 'food', width: 600, height: 432 },
-  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'product', width: 600, height: 793 },
-  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'video product', width: 600, height: 747 },
-  { id: 13, image: 'pf13', title: 'Ultricies Aenean', category: 'video product', width: 600, height: 622 }
+  { id: 1, image: 'sun_glasses', title: 'Sun Glasses', category: 'product', width: 600, height: 400 },
+  { id: 2, image: 'headlamp', title: 'Head Lamp', category: 'product', width: 600, height: 462 },
+  { id: 3, image: 'oils', title: 'Oils', category: 'product', width: 600, height: 789 },
+  { id: 4, image: 'black_tube', title: 'Black Tube', category: 'product', width: 600, height: 715 },
+  { id: 5, image: 'lipstick', title: 'Lipstic', category: 'product', width: 600, height: 480 },
+  { id: 6, image: 'cupcacke1', title: 'Cup Cacke One', category: 'food', width: 600, height: 396 },
+  { id: 7, image: 'glasses', title: 'Glasses', category: 'product', width: 600, height: 400 },
+  { id: 8, image: 'cosmetic', title: 'Cosmetics', category: 'product', width: 600, height: 600 },
+  { id: 9, image: 'cog1', title: 'Auto Cog', category: 'product', width: 600, height: 449 },
+  { id: 10, image: 'gele', title: 'Gele Cake', category: 'food', width: 600, height: 432 },
+  { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'food', width: 600, height: 793 },
+  { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'food', width: 600, height: 747 },
+  { id: 13, image: 'lamp1', title: 'Edison Lamp', category: 'estate product', width: 600, height: 622 },
+  { id: 14, image: 'granat_inzir', title: 'Grant Fig', category: 'still', width: 600, height: 622 }
 ];
 
 const pricingList3 = [
