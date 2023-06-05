@@ -1,16 +1,12 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import { Fragment } from 'react';
+import Head from 'next/head';
 // -------- custom component -------- //
 import { Team8 } from 'components/blocks/team';
 import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
-import { Clients1 } from 'components/blocks/clients';
 import { Process8 } from 'components/blocks/process';
 import Carousel from 'components/reuseable/Carousel';
-import ProgressList from 'components/common/ProgressList';
-import FigureImage from 'components/reuseable/FigureImage';
-import AccordionList from 'components/common/AccordionList';
 import { TestimonialCard2 } from 'components/reuseable/testimonial-cards';
 // -------- icons component -------- //
 import Target from 'icons/lineal/Target';
@@ -52,6 +48,13 @@ const serviceList2 = [
 const AboutTwo: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Photo Studio {company.companyName} | About</title>
+        <meta
+          name="description"
+          content="Need quality product photography? Send us your product and get back good looking photographs for your ecommerce!"
+        />
+      </Head>
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
         <NavbarPhoto language button={<Button />} />
