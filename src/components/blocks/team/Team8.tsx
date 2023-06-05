@@ -5,7 +5,7 @@ import carouselBreakpoints from 'utils/carouselBreakpoints';
 import NextLink from 'components/reuseable/links/NextLink';
 import { TeamCard2 } from 'components/reuseable/team-cards';
 // -------- data -------- //
-import teams from 'data/team-list';
+import { teams } from 'data/herro';
 
 const Team8: FC = () => {
   return (
@@ -15,10 +15,7 @@ const Team8: FC = () => {
           <div className="col-lg-4">
             <h2 className="fs-15 text-uppercase text-line text-primary text-center mb-3">Meet the Team</h2>
             <h3 className="display-5 mb-5">Save your time and money by choosing our professional team.</h3>
-            <p>
-              Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at
-              eros tempus porttitor.
-            </p>
+            <p>Photography and Videography is our passion.</p>
 
             <NextLink title="See All Members" href="#" className="btn btn-primary rounded-pill mt-3" />
           </div>

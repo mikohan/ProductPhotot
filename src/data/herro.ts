@@ -326,7 +326,7 @@ const teams = [
   {
     id: 1,
     name: 'Vlad',
-    image: '/img/avatars/t1.jpg',
+    image: '/img/avatars/me@2x.jpg',
     designation: 'Producer',
     dribbbleUrl: 'https://dribbble.com',
     twitterUrl: 'https://www.twitter.com',
@@ -336,7 +336,7 @@ const teams = [
   {
     id: 2,
     name: 'Alisha',
-    image: '/img/avatars/t2.jpg',
+    image: '/img/avatars/alisha@2x.jpg',
     designation: 'Marketing Specialist',
     dribbbleUrl: 'https://dribbble.com',
     twitterUrl: 'https://www.twitter.com',
@@ -346,7 +346,7 @@ const teams = [
   {
     id: 3,
     name: 'Basil',
-    image: '/img/avatars/t3.jpg',
+    image: '/img/avatars/basil@2x.jpg',
     designation: 'Photographer',
     dribbbleUrl: 'https://dribbble.com',
     twitterUrl: 'https://www.twitter.com',
@@ -355,24 +355,24 @@ const teams = [
   },
   {
     id: 4,
-    name: 'Jackie Sanders',
-    image: '/img/avatars/t4.jpg',
-    designation: 'Investment Planner',
+    name: 'Helen',
+    image: '/img/avatars/ogure@2x.jpg',
+    designation: 'Graphic Designer',
     dribbbleUrl: 'https://dribbble.com',
     twitterUrl: 'https://www.twitter.com',
     facebookUrl: 'https://www.facebook.com',
-    description: 'Fermentum massa justo sit amet risus morbi leo.'
-  },
-  {
-    id: 5,
-    name: 'Cory Smith',
-    image: '/img/avatars/t5.jpg',
-    designation: 'Project Manager',
-    dribbbleUrl: 'https://dribbble.com',
-    twitterUrl: 'https://www.twitter.com',
-    facebookUrl: 'https://www.facebook.com',
-    description: 'Fermentum massa justo sit amet risus morbi leo.'
+    description: 'I love systems in everything!'
   }
+  // {
+  //   id: 5,
+  //   name: 'Cory Smith',
+  //   image: '/img/avatars/t5.jpg',
+  //   designation: 'Project Manager',
+  //   dribbbleUrl: 'https://dribbble.com',
+  //   twitterUrl: 'https://www.twitter.com',
+  //   facebookUrl: 'https://www.facebook.com',
+  //   description: 'Fermentum massa justo sit amet risus morbi leo.'
+  // }
 ];
 
 export {
