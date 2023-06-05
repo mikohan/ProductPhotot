@@ -1,26 +1,32 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
+import Head from 'next/head';
 // -------- custom component -------- //
 import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import { Pricing2 } from 'components/blocks/pricing';
 import { CTA3 } from 'components/blocks/call-to-action';
-import { TestimonialCard3 } from 'components/reuseable/testimonial-cards';
-import IconBox from 'components/reuseable/IconBox';
-import Carousel from 'components/reuseable/Carousel';
 import Accordion from 'components/reuseable/accordion';
 import PageProgress from 'components/common/PageProgress';
-import NextLink from 'components/reuseable/links/NextLink';
 import Button from 'components/elements/NavbarButton';
 import { Portfolio1 } from 'components/blocks/portfolio';
 // -------- data -------- //
 import { accordionList } from 'data/herro';
+import { company } from 'data/company-info';
+
 // -------- carousel breakpoint obj -------- //
 import carouselBreakpoints from 'utils/carouselBreakpoints';
 
 const Pricing: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Product Photography Prices - {company.companyName}</title>
+        <meta
+          name="description"
+          content="Product Photography prices by Professional Photo Studio. Send your message and get the best price in US."
+        />
+      </Head>
       <PageProgress />
 
       {/* ========== header section ========== */}
