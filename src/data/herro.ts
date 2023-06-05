@@ -322,6 +322,59 @@ export const processList7 = [
   }
 ];
 
+const teams = [
+  {
+    id: 1,
+    name: 'Vlad',
+    image: '/img/avatars/t1.jpg',
+    designation: 'Producer',
+    dribbbleUrl: 'https://dribbble.com',
+    twitterUrl: 'https://www.twitter.com',
+    facebookUrl: 'https://www.facebook.com',
+    description: 'Ideas Generator.'
+  },
+  {
+    id: 2,
+    name: 'Alisha',
+    image: '/img/avatars/t2.jpg',
+    designation: 'Marketing Specialist',
+    dribbbleUrl: 'https://dribbble.com',
+    twitterUrl: 'https://www.twitter.com',
+    facebookUrl: 'https://www.facebook.com',
+    description: 'The Bridge between us and you.'
+  },
+  {
+    id: 3,
+    name: 'Basil',
+    image: '/img/avatars/t3.jpg',
+    designation: 'Photographer',
+    dribbbleUrl: 'https://dribbble.com',
+    twitterUrl: 'https://www.twitter.com',
+    facebookUrl: 'https://www.facebook.com',
+    description: 'Creativity is my passion!'
+  },
+  {
+    id: 4,
+    name: 'Jackie Sanders',
+    image: '/img/avatars/t4.jpg',
+    designation: 'Investment Planner',
+    dribbbleUrl: 'https://dribbble.com',
+    twitterUrl: 'https://www.twitter.com',
+    facebookUrl: 'https://www.facebook.com',
+    description: 'Fermentum massa justo sit amet risus morbi leo.'
+  },
+  {
+    id: 5,
+    name: 'Cory Smith',
+    image: '/img/avatars/t5.jpg',
+    designation: 'Project Manager',
+    dribbbleUrl: 'https://dribbble.com',
+    twitterUrl: 'https://www.twitter.com',
+    facebookUrl: 'https://www.facebook.com',
+    description: 'Fermentum massa justo sit amet risus morbi leo.'
+  }
+];
+
 export {
   herroPhoto,
   serviceList1,
@@ -330,5 +383,6 @@ export {
   processList2,
   testimonialList1,
   pricingList2,
-  accordionList
+  accordionList,
+  teams
 };
