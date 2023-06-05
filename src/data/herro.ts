@@ -375,6 +375,35 @@ const teams = [
   // }
 ];
 
+export const testimonialList2 = [
+  {
+    name: 'Weyne',
+    image: '/img/avatars/te7.jpg',
+    designation: 'Amazon Seller',
+    review: `Very good studio! Great service, customer focused management!
+Lots of design options and various eye candies are available to use.`
+  },
+  {
+    name: 'Cory',
+    image: '/img/avatars/te8.jpg',
+    designation: 'Ecommerce owner',
+    review: `An excellent photographer, it turned out to be a wonderful shooting:
+     I picked up a model, an image, he took the goods himself and sent a photo a day later! Definitely recommend!.`
+  },
+  {
+    name: 'Pavel',
+    image: '/img/avatars/te9.jpg',
+    designation: 'Sales Specialist',
+    review: `Professionals in their field. I recommend. Special thanks to the operator Basil.`
+  },
+  {
+    name: 'Jackie Sanders',
+    image: '/img/avatars/te10.jpg',
+    designation: 'Marketing Studio',
+    review: `Those gyus are professional, real artists, and have met my expectations. Highly recommend!”`
+  }
+];
+
 export {
   herroPhoto,
   serviceList1,

@@ -4,6 +4,7 @@ import Carousel from 'components/reuseable/Carousel';
 import carouselBreakpoints from 'utils/carouselBreakpoints';
 import NextLink from 'components/reuseable/links/NextLink';
 import { TeamCard2 } from 'components/reuseable/team-cards';
+import Button from 'components/elements/NavbarButton';
 // -------- data -------- //
 import { teams } from 'data/herro';
 
@@ -16,8 +17,7 @@ const Team8: FC = () => {
             <h2 className="fs-15 text-uppercase text-line text-primary text-center mb-3">Meet the Team</h2>
             <h3 className="display-5 mb-5">Save your time and money by choosing our professional team.</h3>
             <p>Photography and Videography is our passion.</p>
-
-            <NextLink title="See All Members" href="#" className="btn btn-primary rounded-pill mt-3" />
+            <Button />
           </div>
 
           <div className="col-lg-8">

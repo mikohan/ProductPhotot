@@ -20,7 +20,7 @@ import SettingsThree from 'icons/lineal/SettingsThree';
 import Button from 'components/elements/NavbarButton';
 
 // -------- data -------- //
-import { testimonialList2 } from 'data/testimonial-list';
+import { testimonialList2 } from 'data/herro';
 const serviceList2 = [
   {
     id: 1,
@@ -106,9 +106,8 @@ const AboutTwo: NextPage = () => {
             </div>
 
             {/* ========== clients section ========== */}
-            <div className="px-lg-5">
-              <Clients1 />
-            </div>
+
+            <div className="px-lg-5">{/* <Clients1 /> */}</div>
           </div>
         </section>
 
