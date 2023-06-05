@@ -1,18 +1,38 @@
 import { FC, FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import axios from 'axios';
 
 const ContactForm: FC = () => {
-  const push = useRouter();
+  const { push } = useRouter();
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const serverUrl = 'https://api.emailjs.com/api/v1.0/email/send';
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(name, surname, email, message);
-    // push('/photo/thankyou');
+    const payload = {
+      service_id: 'service_28l37sa',
+      template_id: 'template_7kv08iz',
+      user_id: '42Bbj0zJrwuCZtcHN',
+      template_params: {
+        name,
+        surname,
+        email,
+        message
+      }
+    };
+    const responce = await axios.post(serverUrl, payload);
+    if (responce.status == 200) {
+      push('/photo/thankyou');
+    } else {
+      push('/photo/error');
+    }
+    console.log(responce);
   };
+
   return (
     <form onSubmit={handleSubmit} className="contact-form needs-validation" method="post">
       <div className="messages"></div>
