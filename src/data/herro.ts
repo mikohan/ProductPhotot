@@ -106,7 +106,7 @@ const portfolioList4 = [
   { id: 2, image: 'headlamp', title: 'Head Lamp', category: 'product', width: 600, height: 462 },
   { id: 3, image: 'oils', title: 'Oils', category: 'product', width: 600, height: 789 },
   { id: 4, image: 'black_tube', title: 'Black Tube', category: 'product', width: 600, height: 715 },
-  { id: 5, image: 'lipstick', title: 'Lipstic', category: 'product', width: 600, height: 480 },
+  { id: 5, image: 'lipstick', title: 'Lipstick', category: 'product', width: 600, height: 480 },
   { id: 6, image: 'cupcacke1', title: 'Cup Cacke One', category: 'food', width: 600, height: 396 },
   { id: 7, image: 'glasses', title: 'Glasses', category: 'product', width: 600, height: 400 },
   { id: 8, image: 'cosmetic', title: 'Cosmetics', category: 'product', width: 600, height: 600 },
@@ -115,7 +115,9 @@ const portfolioList4 = [
   { id: 11, image: 'pf11', title: 'Ultricies Aenean', category: 'food', width: 600, height: 793 },
   { id: 12, image: 'pf12', title: 'Pellentesque Commodo', category: 'food', width: 600, height: 747 },
   { id: 13, image: 'lamp1', title: 'Edison Lamp', category: 'estate product', width: 600, height: 622 },
-  { id: 14, image: 'granat_inzir', title: 'Grant Fig', category: 'still', width: 600, height: 622 }
+  { id: 14, image: 'granat_inzir', title: 'Grant Fig', category: 'still', width: 600, height: 400 },
+  { id: 15, image: 'yellow_kabachek_orton', title: 'Still Life 2', category: 'still', width: 600, height: 400 },
+  { id: 16, image: 'raspberry1', title: 'Raspbery One', category: 'still food', width: 600, height: 622 }
 ];
 
 const pricingList3 = [
