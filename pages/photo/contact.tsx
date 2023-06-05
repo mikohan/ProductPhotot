@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
+import Head from 'next/head';
 // -------- custom component -------- //
 import { NavbarPhoto } from 'components/blocks/navbar';
 import { Tiles3 } from 'components/elements/tiles';
@@ -8,16 +9,25 @@ import Breadcrumb from 'components/reuseable/Breadcrumb';
 import PageProgress from 'components/common/PageProgress';
 import ContactForm from 'components/common/ContactForm';
 import Button from 'components/elements/NavbarButton';
+import { company } from 'data/company-info';
+import { url } from 'utils/urls';
 
 // -------- data -------- //
 const breadcrumb = [
-  { id: 1, title: 'Home', url: '/' },
+  { id: 1, title: 'Home', url: url.home() },
   { id: 2, title: 'Contact', url: '#' }
 ];
 
 const ContactTwo: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Product Photo Shoot Studio in Los Angeles {company.companyName} | Contacts</title>
+        <meta
+          name="description"
+          content="Need quality product photoshoot? Contact us and get your perfect product's images!"
+        />
+      </Head>
       <PageProgress />
 
       {/* ========== header section ========== */}
@@ -60,8 +70,8 @@ const ContactTwo: NextPage = () => {
                   <div>
                     <h5 className="mb-1">Address</h5>
                     <address>
-                      Moonshine St. 14/05 Light City, <br className="d-none d-md-block" />
-                      London, United Kingdom
+                      {company.companyAddress}, <br className="d-none d-md-block" />
+                      Los Angeles, CA, USA
                     </address>
                   </div>
                 </div>
@@ -75,7 +85,7 @@ const ContactTwo: NextPage = () => {
 
                   <div>
                     <h5 className="mb-1">Phone</h5>
-                    <p>00 (123) 456 78 90</p>
+                    <p>{company.companyPhone}</p>
                   </div>
                 </div>
 
@@ -90,7 +100,7 @@ const ContactTwo: NextPage = () => {
                     <h5 className="mb-1">E-mail</h5>
                     <p className="mb-0">
                       <a href="mailto:sandbox@email.com" className="link-body">
-                        sandbox@email.com
+                        {company.companyEmail}
                       </a>
                     </p>
                   </div>

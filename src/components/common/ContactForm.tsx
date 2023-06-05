@@ -1,13 +1,33 @@
-import { FC } from 'react';
+import { FC, FormEvent, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const ContactForm: FC = () => {
+  const push = useRouter();
+  const [name, setName] = useState('');
+  const [surname, setSurname] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(name, surname, email, message);
+    // push('/photo/thankyou');
+  };
   return (
-    <form className="contact-form needs-validation" method="post">
+    <form onSubmit={handleSubmit} className="contact-form needs-validation" method="post">
       <div className="messages"></div>
       <div className="row gx-4">
         <div className="col-md-6">
           <div className="form-floating mb-4">
-            <input required type="text" name="name" id="form_name" placeholder="Jane" className="form-control" />
+            <input
+              required
+              type="text"
+              name="name"
+              id="form_name"
+              placeholder="Jane"
+              className="form-control"
+              onChange={(e) => setName(e.target.value)}
+            />
             <label htmlFor="form_name">First Name *</label>
             <div className="valid-feedback"> Looks good! </div>
             <div className="invalid-feedback"> Please enter your first name. </div>
@@ -16,7 +36,15 @@ const ContactForm: FC = () => {
 
         <div className="col-md-6">
           <div className="form-floating mb-4">
-            <input required type="text" name="surname" placeholder="Doe" id="form_lastname" className="form-control" />
+            <input
+              required
+              type="text"
+              name="surname"
+              placeholder="Doe"
+              id="form_lastname"
+              className="form-control"
+              onChange={(e) => setSurname(e.target.value)}
+            />
             <label htmlFor="form_lastname">Last Name *</label>
             <div className="valid-feedback"> Looks good! </div>
             <div className="invalid-feedback"> Please enter your last name. </div>
@@ -32,6 +60,7 @@ const ContactForm: FC = () => {
               id="form_email"
               className="form-control"
               placeholder="jane.doe@example.com"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="form_email">Email *</label>
             <div className="valid-feedback"> Looks good! </div>
@@ -64,6 +93,7 @@ const ContactForm: FC = () => {
               className="form-control"
               placeholder="Your message"
               style={{ height: 150 }}
+              onChange={(e) => setMessage(e.target.value)}
             />
 
             <label htmlFor="form_message">Message *</label>
