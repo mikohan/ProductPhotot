@@ -26,10 +26,18 @@ import SearchTwo from 'icons/lineal/SearchTwo';
 import Analytics from 'icons/lineal/Analytics';
 import Megaphone from 'icons/lineal/Megaphone';
 import ClockThree from 'icons/lineal/ClockThree';
-import DeliveryBox from 'icons/solid-mono/DeliveryBox';
 import CloudNetwork from 'icons/solid-duo/CloudNetwork';
-import SmartphoneTwo from 'icons/lineal/SmartphoneTwo';
 import SettingsThree from 'icons/lineal/SettingsThree';
+import Bulb from 'icons/solid-mono/Bulb';
+import Rocket from 'icons/lineal/Rocket';
+import Design from 'icons/lineal/Design';
+import Loading from 'icons/lineal/Loading';
+import Compare from 'icons/solid-mono/Compare';
+import Savings from 'icons/lineal/Savings';
+import LightBulb from 'icons/lineal/LightBulb';
+import DeliveryBox from 'icons/solid-mono/DeliveryBox';
+import PieChartTwo from 'icons/lineal/PieChartTwo';
+import SmartphoneTwo from 'icons/lineal/SmartphoneTwo';
 import CloudComputing from 'icons/lineal/CloudComputing';
 import { LinkType } from 'types/demo-1';
 import color from 'utils/color';
@@ -290,6 +298,28 @@ const accordionList = [
       body: `Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis.`
     }
   ]
+];
+
+// used in the process-8 block
+export const processList7 = [
+  {
+    id: 1,
+    Icon: LightBulb,
+    title: 'Contact Us',
+    description: 'Contact Us and get the best price in US.'
+  },
+  {
+    id: 2,
+    Icon: PieChartTwo,
+    title: 'Ship your products to us',
+    description: 'After finishig photography we will send them back!'
+  },
+  {
+    id: 3,
+    Icon: Design,
+    title: 'Get your images',
+    description: 'Increase your sales with professionally looking images and videos.'
+  }
 ];
 
 export {

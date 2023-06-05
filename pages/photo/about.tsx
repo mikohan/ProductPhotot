@@ -63,14 +63,14 @@ const AboutTwo: NextPage = () => {
             <div className="row">
               <div className="col-xl-5 mx-auto mb-6">
                 <h1 className="display-1 mb-3">About Us</h1>
-                <p className="lead mb-0">A company turning ideas into beautiful things.</p>
+                <p className="lead mb-0">We are the company that turning ideas into beautiful thins.</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* ========== services section ========== */}
-        <section className="wrapper bg-light">
+        {/* <section className="wrapper bg-light">
           <div className="container pb-14 pb-md-16">
             <div className="row text-center mb-12 mb-md-15">
               <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-n18 mt-md-n22">
@@ -114,7 +114,7 @@ const AboutTwo: NextPage = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="wrapper bg-gray">
           <div className="container py-14 py-md-16">
@@ -122,7 +122,7 @@ const AboutTwo: NextPage = () => {
             <Process8 />
 
             {/* ========== why choose us section ========== */}
-            <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+            {/* <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
               <div className="col-lg-7 order-lg-2">
                 <figure>
                   <img
@@ -139,7 +139,7 @@ const AboutTwo: NextPage = () => {
                 <h3 className="display-5 mb-7">A few reasons why our valued customers choose us.</h3>
                 <AccordionList />
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
