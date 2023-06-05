@@ -76,9 +76,10 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
             <ListItemLink href={url.home()} title="Home" />
             {/* =============================== My Home item ================== */}
             <ListItemLink href={url.prices()} title="Pricing" />
-            {/* ===================== projects nav item  ===================== */}
+
+            {/* ===================== Services  ===================== */}
             <li className="nav-item dropdown">
-              <DropdownToggleLink title="Portfolio" className="nav-link dropdown-toggle" />
+              <DropdownToggleLink title="Services" className="nav-link dropdown-toggle" />
               <div className="dropdown-menu dropdown-lg">
                 <div className="dropdown-lg-content">
                   {projectsNavigation.map(({ title, children }, i) => (
@@ -90,6 +91,9 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
                 </div>
               </div>
             </li>
+
+            {/* =============================== About item ================== */}
+            <ListItemLink href={url.portfolio()} title="Portfolio" />
 
             {/* =============================== About item ================== */}
             <ListItemLink href={url.about()} title="About" />
