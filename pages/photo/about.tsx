@@ -18,6 +18,7 @@ import BarChart from 'icons/lineal/BarChart';
 import Megaphone from 'icons/lineal/Megaphone';
 import SettingsThree from 'icons/lineal/SettingsThree';
 import Button from 'components/elements/NavbarButton';
+import { company } from 'data/company-info';
 
 // -------- data -------- //
 import { testimonialList2 } from 'data/herro';
@@ -59,7 +60,7 @@ const AboutTwo: NextPage = () => {
       <main className="content-wrapper">
         {/* ========== page title section ========== */}
         <section className="wrapper bg-soft-primary">
-          <div className="container pt-10 pb-20 pt-md-14 pb-md-23 text-center">
+          <div className="container pt-10 pb-14 pt-md-10 pb-md-14 text-center">
             <div className="row">
               <div className="col-xl-5 mx-auto mb-6">
                 <h1 className="display-1 mb-3">About Us</h1>
@@ -136,7 +137,7 @@ const AboutTwo: NextPage = () => {
                   </div>
                   <div>
                     <h5 className="mb-1">Address</h5>
-                    <address>Moonshine St. 14/05 Light City, London</address>
+                    <address>{company.companyAddress}</address>
                   </div>
                 </div>
                 <div className="d-flex flex-row">
@@ -147,7 +148,7 @@ const AboutTwo: NextPage = () => {
                   </div>
                   <div>
                     <h5 className="mb-1">Phone</h5>
-                    <p>00 (123) 456 78 90</p>
+                    <p>{company.companyPhone}</p>
                   </div>
                 </div>
                 <div className="d-flex flex-row">
@@ -160,7 +161,7 @@ const AboutTwo: NextPage = () => {
                     <h5 className="mb-1">E-mail</h5>
                     <p className="mb-0">
                       <a href="mailto:sandbox@email.com" className="link-body">
-                        sandbox@email.com
+                        {company.companyEmail}
                       </a>
                     </p>
                   </div>
