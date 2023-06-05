@@ -14,8 +14,8 @@ import { CTA1, CTA2, CTA10 } from 'components/blocks/call-to-action';
 import { Testimonial1 } from 'components/blocks/testimonial';
 import { Services1, Services2 } from 'components/blocks/services';
 import PageProgress from 'components/common/PageProgress';
-import NextLink from 'components/reuseable/links/NextLink';
 import { Portfolio2, Portfolio5 } from 'components/blocks/portfolio';
+import Button from 'components/elements/NavbarButton';
 
 const Home: NextPage = () => {
   return (
@@ -24,10 +24,7 @@ const Home: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-soft-primary">
-        <NavbarPhoto
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">
