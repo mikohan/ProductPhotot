@@ -16,10 +16,19 @@ import { Services1, Services2 } from 'components/blocks/services';
 import PageProgress from 'components/common/PageProgress';
 import { Portfolio2, Portfolio5 } from 'components/blocks/portfolio';
 import Button from 'components/elements/NavbarButton';
+import Head from 'next/head';
+import { company } from 'data/company-info';
 
 const Home: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>Product Photography by Professional Team - {company.companyName}</title>
+        <meta
+          name="description"
+          content="Need a quality product photography? Increase your sales! Send us your product and get back amazing looking photographs."
+        />
+      </Head>
       <PageProgress />
 
       {/* ========== header section ========== */}
