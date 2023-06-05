@@ -1,6 +1,7 @@
 import { FC, FormEvent, Fragment, useState } from 'react';
-import NextLink from 'components/reuseable/links/NextLink';
+import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { company } from 'data/company-info';
 
 const ContactForm: FC = () => {
   const [name, setName] = useState('');
@@ -8,10 +9,26 @@ const ContactForm: FC = () => {
   const [text, setText] = useState('');
   const { push } = useRouter();
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(name, phone, text);
-    push('/photo/thankyou');
+    const payload = {
+      service_id: company.sendEmailSettings.service_id,
+      template_id: company.sendEmailSettings.template_id,
+      user_id: company.sendEmailSettings.user_id,
+      template_params: {
+        name,
+        surname: 'Modal',
+        email: phone,
+        message: text
+      }
+    };
+    const responce = await axios.post(company.sendEmailSettings.url, payload);
+    if (responce.status == 200) {
+      push('/photo/thankyou');
+    } else {
+      push('/photo/error');
+    }
+    console.log(responce);
   };
 
   return (

@@ -1,6 +1,7 @@
 import { FC, FormEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
+import { company } from 'data/company-info';
 
 const ContactForm: FC = () => {
   const { push } = useRouter();
@@ -9,14 +10,12 @@ const ContactForm: FC = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const serverUrl = 'https://api.emailjs.com/api/v1.0/email/send';
-
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const payload = {
-      service_id: 'service_28l37sa',
-      template_id: 'template_7kv08iz',
-      user_id: '42Bbj0zJrwuCZtcHN',
+      service_id: company.sendEmailSettings.service_id,
+      template_id: company.sendEmailSettings.template_id,
+      user_id: company.sendEmailSettings.user_id,
       template_params: {
         name,
         surname,
@@ -24,7 +23,7 @@ const ContactForm: FC = () => {
         message
       }
     };
-    const responce = await axios.post(serverUrl, payload);
+    const responce = await axios.post(company.sendEmailSettings.url, payload);
     if (responce.status == 200) {
       push('/photo/thankyou');
     } else {
