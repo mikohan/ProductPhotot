@@ -47,7 +47,7 @@ const Projects: NextPage = () => {
             <div className="container py-13 py-md-17 text-center">
               <div className="row">
                 <div className="col-lg-10 col-xxl-8 mx-auto">
-                  <h1 className="display-1 mb-1">Check out some of our awesome projects with creative ideas.</h1>
+                  <h1 className="display-1 mb-1">Product Photography for Amazon and Ecommerce Service</h1>
                 </div>
               </div>
             </div>

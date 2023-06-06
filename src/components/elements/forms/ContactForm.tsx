@@ -28,7 +28,6 @@ const ContactForm: FC = () => {
     } else {
       push('/photo/error');
     }
-    console.log(responce);
   };
 
   return (

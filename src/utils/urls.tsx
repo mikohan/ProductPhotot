@@ -10,11 +10,11 @@ export const url = {
   termsOfUse: () => `/photo/terms`,
   /** Services */
   serviceProduct: () => `/photo/product-photography`,
-  serviceAmazon: () => `/photo/amazon`,
+  serviceAmazon: () => `/photo/amazon-photography`,
   serviceFood: () => `/photo/food-photography`,
-  serviceRealEstate: () => `/photo/real-estate`,
+  serviceRealEstate: () => `/photo/real-estate-photography`,
   serviceVideo: () => `/photo/videography`,
-  serviceCars: () => `/photo/cars`,
+  serviceCars: () => `/photo/cars-photography`,
   projectSingle: (slug: string) => `/photo/projects/${slug}`
 };
 
