@@ -15,7 +15,7 @@ export const url = {
   serviceRealEstate: () => `/photo/real-estate`,
   serviceVideo: () => `/photo/videography`,
   serviceCars: () => `/photo/cars`,
-  projectSingle: (slug: string) => `/photo/${slug}`
+  projectSingle: (slug: string) => `/photo/projects/${slug}`
 };
 
 export const projectsNavigation = [

@@ -1,20 +1,24 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
+import Head from 'next/head';
 // -------- custom component -------- //
-import { Navbar } from 'components/blocks/navbar';
+import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import FigureImage from 'components/reuseable/FigureImage';
 import NextLink from 'components/reuseable/links/NextLink';
+import Button from 'components/elements/NavbarButton';
+import { company } from 'data/company-info';
 
 const NotFound: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>404 page - {company.companyName}</title>
+        <meta name="description" content={`Product Photography 404 page - ${company.companyName}`} />
+      </Head>
       {/* ========== header section ========== */}
       <header className="wrapper bg-light">
-        <Navbar
-          language
-          button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded-pill" />}
-        />
+        <NavbarPhoto language button={<Button />} />
       </header>
 
       <main className="content-wrapper">
