@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { Fragment, useEffect } from 'react';
+import Head from 'next/head';
 // -------- custom component -------- //
 import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
@@ -10,9 +11,10 @@ import { ProjectCard1 } from 'components/reuseable/project-cards';
 import useIsotope from 'hooks/useIsotope';
 import useLightBox from 'hooks/useLightBox';
 import useTooltip from 'hooks/useTooltip';
-import Button from 'components/elements/NavbarButton';
 // -------- data -------- //
 import { projectList1 } from 'data/project';
+import { company } from 'data/company-info';
+import Button from 'components/elements/NavbarButton';
 
 const Projects: NextPage = () => {
   // used for masonry layout
@@ -24,6 +26,13 @@ const Projects: NextPage = () => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Product Photography Projects - {company.companyName}</title>
+        <meta
+          name="description"
+          content={`Product Photography Projects of our creative photo studio - ${company.companyName}`}
+        />
+      </Head>
       <PageProgress />
 
       {/* ========== header section ========== */}

@@ -12,7 +12,8 @@ export const url = {
   serviceProduct: () => `/photo/product-photography`,
   serviceFood: () => `/photo/food-photography`,
   serviceRealEstate: () => `/photo/real-estate`,
-  serviceVideo: () => `/photo/videography`
+  serviceVideo: () => `/photo/videography`,
+  projectSingle: (slug: string) => `/photo/${slug}`
 };
 
 export const projectsNavigation = [
