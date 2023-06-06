@@ -6,8 +6,11 @@ import { url } from 'utils/urls';
 type TestimonialCard1Props = {
   title: string;
   imageUrl: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
+  designation?: string;
+  review?: string;
+  columnClasses?: string;
 };
 // =================================================
 

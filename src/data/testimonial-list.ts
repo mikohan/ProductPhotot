@@ -4,25 +4,11 @@ export const testimonialList1 = [
     name: 'Coriss Ambady',
     designation: 'Financial Analyst',
     review: 'Cum sociis natoque penatibus et magnis dis parturient montes.',
-    columnClasses: 'col-xl-5 align-self-end'
-  },
-  {
-    name: 'Cory Zamora',
-    designation: 'Marketing Specialist',
-    review: `Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod.`,
-    columnClasses: 'align-self-end'
-  },
-  {
-    name: 'Barclay Widerski',
-    designation: 'Sales Specialist',
-    review: `Donec id elit non porta gravida at eget metus. Duis mollis est luctus commodo nisi erat.`,
-    columnClasses: 'col-xl-5 offset-xl-1'
-  },
-  {
-    name: 'Jackie Sanders',
-    designation: 'Investment Planner',
-    review: `Nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo pellentesque.`,
-    columnClasses: 'align-self-start'
+    columnClasses: 'col-xl-5 align-self-end',
+    width: 500,
+    height: 500,
+    title: 'sjsjsj',
+    imageUrl: 'jfjfjfj'
   }
 ];
 

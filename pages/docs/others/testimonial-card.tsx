@@ -75,9 +75,9 @@ const TestimonialCards: FC = () => {
         <div className="card">
           <div className="card-body mb-n2">
             <div className="row gx-md-5 gy-5">
-              {testimonialList1.map((item, i) => (
+              {testimonialList2.map((item, i) => (
                 <div className="col-md-6" key={i}>
-                  <TestimonialCard1 {...item} />
+                  <TestimonialCard2 {...item} />
                 </div>
               ))}
             </div>
