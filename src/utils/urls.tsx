@@ -10,29 +10,23 @@ export const url = {
   termsOfUse: () => `/photo/terms`,
   /** Services */
   serviceProduct: () => `/photo/product-photography`,
+  serviceAmazon: () => `/photo/amazon`,
   serviceFood: () => `/photo/food-photography`,
   serviceRealEstate: () => `/photo/real-estate`,
   serviceVideo: () => `/photo/videography`,
+  serviceCars: () => `/photo/cars`,
   projectSingle: (slug: string) => `/photo/${slug}`
 };
 
 export const projectsNavigation = [
   {
-    title: 'PROJECT PAGES',
+    title: 'Our All Services',
     children: [
-      { id: 1, title: 'Project I', url: '/projects-1' },
-      { id: 2, title: 'Project II', url: '/projects-2' },
-      { id: 3, title: 'Project III', url: '/projects-3' },
-      { id: 4, title: 'Project VI', url: '/projects-4' }
-    ]
-  },
-  {
-    title: 'SINGLE PROJECTS',
-    children: [
-      { id: 1, title: 'Single Project I', url: '/single-project-1' },
-      { id: 2, title: 'Single Project II', url: '/single-project-2' },
-      { id: 3, title: 'Single Project III', url: '/single-project-3' },
-      { id: 4, title: 'Single Project VI', url: '/single-project-4' }
+      { id: 1, title: 'Product Photography', url: url.serviceProduct() },
+      { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon() },
+      { id: 3, title: 'Cars Photography', url: url.serviceCars() },
+      { id: 4, title: 'Food Photography', url: url.serviceFood() },
+      { id: 5, title: 'Real Estate Photography', url: url.serviceRealEstate() }
     ]
   }
 ];

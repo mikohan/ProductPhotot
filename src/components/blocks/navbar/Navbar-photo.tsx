@@ -52,6 +52,7 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
 
   // render inner nav item links
   const renderLinks = (links: LinkType[]) => {
+    console.log(links);
     return links.map((item) => (
       <ListItemLink href={item.url} title={item.title} linkClassName="dropdown-item" key={item.id} />
     ));
