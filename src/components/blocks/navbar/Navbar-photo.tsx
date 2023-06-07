@@ -99,6 +99,10 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
 
             {/* =============================== About item ================== */}
             <ListItemLink href={url.about()} title="About" />
+
+            {/* =============================== Contacts item ================== */}
+            <ListItemLink href={url.blog()} title="Blog" />
+
             {/* =============================== Contacts item ================== */}
             <ListItemLink href={url.contact()} title="Contact us" />
 

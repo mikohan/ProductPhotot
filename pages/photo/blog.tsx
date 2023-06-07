@@ -17,15 +17,15 @@ import { company } from 'data/company-info';
 const blogs = [
   {
     id: 1,
-    link: '#',
-    category: 'Coding',
+    link: 'amazon-photography-insights',
+    category: 'Product Photography',
     image: '/img/photos/b4.jpg',
-    title: 'Ligula tristique quis risus',
-    description: `Mauris convallis non ligula non interdum. Gravida vulputate convallis tempus vestibulum cras imperdiet nun eu dolor. Aenean lacinia bibendum nulla sed.`
+    title: 'Amazon Photography Insights',
+    description: `How good photos of your product can increase sailes on Amazon marketplace`
   },
   {
     id: 2,
-    link: '#',
+    link: 'second-post',
     category: 'Workspace',
     image: '/img/photos/b5.jpg',
     title: 'Nullam id dolor elit id nibh',
@@ -33,7 +33,7 @@ const blogs = [
   },
   {
     id: 3,
-    link: '#',
+    link: 'third-post',
     category: 'Meeting',
     image: '/img/photos/b6.jpg',
     title: 'Ultricies fusce porta elit',
@@ -41,7 +41,7 @@ const blogs = [
   },
   {
     id: 4,
-    link: '#',
+    link: 'forth-post',
     category: 'Business Tips',
     image: '/img/photos/b7.jpg',
     title: 'Morbi leo risus porta eget',
