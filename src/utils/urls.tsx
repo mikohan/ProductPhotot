@@ -8,6 +8,8 @@ export const url = {
   process: () => `/photo/process`,
   policy: () => `/photo/terms`,
   termsOfUse: () => `/photo/terms`,
+  blog: () => `/photo/blog`,
+  post: (slug: string) => `/photo/blog-post/${slug}`,
   /** Services */
   serviceProduct: () => `/photo/product-photography`,
   serviceAmazon: () => `/photo/amazon-photography`,
