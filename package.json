@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
-    "build": "next build",
+    "build": "NODE_OPTIONS=\"--max_old_space_size=4096\" next build",
     "start": "next start",
     "sass": "sass --no-source-map src/assets/scss:public/css"
   },
