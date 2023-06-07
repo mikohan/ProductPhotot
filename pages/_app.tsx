@@ -88,16 +88,19 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Professional Product Photograpy Studio - {company.companyName}</title>
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVRNRB6PTJ"></Script>
-        <Script>
+        <Script
+          id="google1"
+          strategy="afterInteractive"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QVRNRB6PTJ"
+        ></Script>
+        <Script id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-QVRNRB6PTJ');
   `}
         </Script>
-
-        <Script id="google-analytics" strategy="afterInteractive"></Script>
       </Head>
 
       <ThemeProvider>
