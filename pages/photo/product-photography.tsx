@@ -41,7 +41,7 @@ const Projects: NextPage = () => {
 
       <main className="content-wrapper">
         {/* ========== title section ========== */}
-        <section className="section-frame overflow-hidden">
+        <section className="section-frame-back overflow-hidden">
           <div className="wrapper bg-gray">
             <div className="container py-13 py-md-17 text-center">
               <div className="row">
