@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import { Fragment, useEffect, useState } from 'react';
 import ThemeProvider from 'theme/ThemeProvider';
+import Script from 'next/script';
 
 // animate css
 import 'animate.css';
@@ -20,6 +21,7 @@ import 'glightbox/dist/css/glightbox.css';
 import 'plugins/scrollcue/scrollCue.css';
 // Bootstrap and custom scss
 import 'assets/scss/style.scss';
+import { company } from 'data/company-info';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
@@ -84,7 +86,18 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sandbox - Modern & Multipurpose NextJS Template</title>
+        <title>Professional Product Photograpy Studio - {company.companyName}</title>
+
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVRNRB6PTJ"></Script>
+        <Script>
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QVRNRB6PTJ');
+  `}
+        </Script>
+
+        <Script id="google-analytics" strategy="afterInteractive"></Script>
       </Head>
 
       <ThemeProvider>
