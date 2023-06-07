@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Link from 'next/link';
 import NextLink from '../links/NextLink';
 import FigureImage from 'components/reuseable/FigureImage';
+import { url } from 'utils/urls';
 
 // ========================================================
 type BlogCard3Props = {
@@ -39,7 +40,7 @@ const BlogCard3: FC<BlogCard3Props> = (props) => {
             </div>
 
             <h2 className="post-title h3 mt-1 mb-3">
-              <NextLink title={title} className="link-dark" href={link} />
+              <NextLink title={title} className="link-dark" href={url.post(link)} />
             </h2>
           </div>
 

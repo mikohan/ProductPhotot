@@ -9,7 +9,6 @@ import { BlogCard2, BlogCard3 } from 'components/reuseable/blog-cards';
 import Carousel from 'components/reuseable/Carousel';
 import Pagination from 'components/reuseable/Pagination';
 import PageProgress from 'components/common/PageProgress';
-import NextLink from 'components/reuseable/links/NextLink';
 import Button from 'components/elements/NavbarButton';
 import Head from 'next/head';
 import { company } from 'data/company-info';
