@@ -13,7 +13,7 @@ const NotFound: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>404 page - {company.companyName}</title>
+        <title>{`404 page - ${company.companyName}`}</title>
         <meta name="description" content={`Product Photography 404 page - ${company.companyName}`} />
       </Head>
       {/* ========== header section ========== */}

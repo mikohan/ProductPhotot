@@ -27,7 +27,7 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Real Estate Photography Services in Los Angeles - {company.companyName}</title>
+        <title>{`Real Estate Photography Services in Los Angeles - ${company.companyName}`}</title>
         <meta
           name="description"
           content={`Real Estate Photography Services in Los Angeles by our creative photo studio - ${company.companyName}`}

@@ -22,7 +22,7 @@ const ContactTwo: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Product Photo Shoot Studio in Los Angeles {company.companyName} | Contacts</title>
+        <title>{`Product Photo Shoot Studio in Los Angeles ${company.companyName} | Contacts`}</title>
         <meta
           name="description"
           content="Need quality product photoshoot? Contact us and get your perfect product's images!"

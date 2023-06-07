@@ -27,7 +27,7 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Product Photography Projects - {company.companyName}</title>
+        <title>{`Product Photography Projects - ${company.companyName}`}</title>
         <meta
           name="description"
           content={`Product Photography Projects of our creative photo studio - ${company.companyName}`}

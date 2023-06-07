@@ -21,7 +21,7 @@ const Pricing: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Product Photography Prices - {company.companyName}</title>
+        <title>{`Product Photography Prices - ${company.companyName}`}</title>
         <meta
           name="description"
           content="Product Photography prices by Professional Photo Studio. Send your message and get the best price in US."

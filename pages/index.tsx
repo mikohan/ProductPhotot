@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Product Photography by Professional Team - {company.companyName}</title>
+        <title>{`Product Photography by Professional Team - ${company.companyName}`}</title>
         <meta
           name="description"
           content="Need a quality product photography? Increase your sales! Send us your product and get back amazing looking photographs."

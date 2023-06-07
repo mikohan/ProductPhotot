@@ -10,6 +10,7 @@ import NextLink from 'components/reuseable/links/NextLink';
 import Button from 'components/elements/NavbarButton';
 // -------- data -------- //
 import { company } from 'data/company-info';
+import Head from 'next/head';
 import { job1Markup } from 'markups/others/job-cards';
 import year from 'utils/currentYear';
 const linkList = [
@@ -27,6 +28,10 @@ const breadcrumb = [
 const Terms: NextPage = () => {
   return (
     <Fragment>
+      <Head>
+        <title>{`Terms and conditions - ${company.companyName}`}</title>
+        <meta name="description" content={`Privacy Policy - ${company.companyName}`} />
+      </Head>
       <PageProgress />
 
       {/* ========== header section ========== */}

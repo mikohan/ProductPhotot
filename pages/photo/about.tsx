@@ -49,7 +49,7 @@ const AboutTwo: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Photo Studio {company.companyName} | About</title>
+        <title>{`Photo Studio ${company.companyName} | About`}</title>
         <meta
           name="description"
           content="Need quality product photography? Send us your product and get back good looking photographs for your ecommerce!"

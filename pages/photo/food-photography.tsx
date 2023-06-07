@@ -27,7 +27,7 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>Food Photography Services in Los Angeles - {company.companyName}</title>
+        <title>{`Food Photography Services in Los Angeles - ${company.companyName}`}</title>
         <meta
           name="description"
           content={`Food Photography Services in Los Angeles by our creative photo studio - ${company.companyName}`}
