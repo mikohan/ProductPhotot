@@ -13,7 +13,7 @@ export const url = {
   serviceAmazon: () => `/photo/amazon-photography`,
   serviceFood: () => `/photo/food-photography`,
   serviceRealEstate: () => `/photo/real-estate-photography`,
-  serviceVideo: () => `/photo/videography`,
+  serviceVideo: () => `/photo/video-production`,
   serviceCars: () => `/photo/cars-photography`,
   projectSingle: (slug: string) => `/photo/projects/${slug}`
 };
@@ -22,11 +22,12 @@ export const projectsNavigation = [
   {
     title: 'Our All Services',
     children: [
-      { id: 1, title: 'Product Photography', url: url.serviceProduct() },
-      { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon() },
-      { id: 3, title: 'Cars Photography', url: url.serviceCars() },
-      { id: 4, title: 'Food Photography', url: url.serviceFood() },
-      { id: 5, title: 'Real Estate Photography', url: url.serviceRealEstate() }
+      { id: 1, title: 'Product Photography', url: url.serviceProduct(), show: true },
+      { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon(), show: true },
+      { id: 3, title: 'Cars Photography', url: url.serviceCars(), show: true },
+      { id: 4, title: 'Food Photography', url: url.serviceFood(), show: true },
+      { id: 5, title: 'Real Estate Photography', url: url.serviceRealEstate(), show: true },
+      { id: 6, title: 'Video Production', url: url.serviceVideo(), show: true }
     ]
   }
 ];

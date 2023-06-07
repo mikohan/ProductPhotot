@@ -1,5 +1,5 @@
-import { NextPage } from 'next';
-import { Fragment, useEffect } from 'react';
+import { NextPage, GetStaticProps } from 'next';
+import { Fragment } from 'react';
 import Head from 'next/head';
 // -------- custom component -------- //
 import { NavbarPhoto } from 'components/blocks/navbar';
@@ -74,6 +74,18 @@ const Projects: NextPage = () => {
       <Footer8 />
     </Fragment>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  if (!process.env.showPage) {
+    return {
+      notFound: true
+    };
+  }
+
+  return {
+    props: {}
+  };
 };
 
 export default Projects;

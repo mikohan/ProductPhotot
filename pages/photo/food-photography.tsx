@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 // -------- custom component -------- //
 import { NavbarPhoto } from 'components/blocks/navbar';
 import { Footer8 } from 'components/blocks/footer';
 import PageProgress from 'components/common/PageProgress';
-import NextLink from 'components/reuseable/links/NextLink';
 import { ProjectCard1 } from 'components/reuseable/project-cards';
 // -------- custom hook -------- //
 import useIsotope from 'hooks/useIsotope';
@@ -74,6 +74,18 @@ const Projects: NextPage = () => {
       <Footer8 />
     </Fragment>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  if (!process.env.showPage) {
+    return {
+      notFound: true
+    };
+  }
+
+  return {
+    props: {}
+  };
 };
 
 export default Projects;
