@@ -62,7 +62,7 @@ export const gallery = {
     }
   ]
 };
-
+// commet
 export const projectList1 = [
   {
     id: 1,
