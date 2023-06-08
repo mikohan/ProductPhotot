@@ -26,6 +26,7 @@ export const projectsNavigation = [
     children: [
       { id: 1, title: 'Product Photography', url: url.serviceProduct(), show: true },
       { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon(), show: true },
+      { id: 2, title: 'Juwelry Photography', url: url.serviceAmazon(), show: true },
       { id: 3, title: 'Cars Photography', url: url.serviceCars(), show: true },
       { id: 4, title: 'Food Photography', url: url.serviceFood(), show: true },
       { id: 5, title: 'Real Estate Photography', url: url.serviceRealEstate(), show: true },
