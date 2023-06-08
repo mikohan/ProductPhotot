@@ -20,6 +20,8 @@ export const company = {
     address: '13163 Fountain Park DR PLAYA VISTA',
     lat: '33.974641',
     lon: '-118.430252',
-    addressLink: 'https://goo.gl/maps/EFhh7gNaXbLBpZZL6'
+    addressLink: 'https://goo.gl/maps/EFhh7gNaXbLBpZZL6',
+    workingHours:
+      'Mo 08:00-17:00 Tu 08:00-17:00 We 08:00-17:00 Th 08:00-17:00 Fr 08:00-17:00 Sa 08:00-17:00 Su 08:00-17:00'
   }
 };

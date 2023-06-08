@@ -45,7 +45,7 @@ const Home: NextPage = () => {
      "longitude": "${company.companyJson.lon}"
   },
   "hasMap": "${company.companyJson.addressLink}",
-   "openingHours": "Mo 08:00-17:00 Tu 08:00-17:00 We 08:00-17:00 Th 08:00-17:00 Fr 08:00-17:00 Sa 08:00-17:00 Su 08:00-17:00",
+   "openingHours": "${company.companyJson.workingHours}",
   "telephone": "${company.companyPhone}"
 }`
     };
