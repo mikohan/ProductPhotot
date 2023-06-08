@@ -20,6 +20,36 @@ import Head from 'next/head';
 import { company } from 'data/company-info';
 
 const Home: NextPage = () => {
+  const metadata = () => {
+    return {
+      __html: `{
+  "@context": "http://www.schema.org",
+  "@type": "ProfessionalService",
+  "name": "${company.companyJson.name}",
+  "url": "${company.companyWebsite}",
+  "logo": "${company.companyJson.logoImage}",
+  "priceRange": "${company.companyJson.priceRange}",
+  "image": "${company.companyJson.companyImg}",
+  "description": "Product Photography Studio in Los Angeles",
+  "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "${company.companyJson.address}",
+     "addressLocality": "Anywhere",
+     "addressRegion": "CA",
+     "postalCode": "${company.companyJson.postalCode}",
+     "addressCountry": "US"
+  },
+  "geo": {
+     "@type": "GeoCoordinates",
+     "latitude": "${company.companyJson.lat}",
+     "longitude": "${company.companyJson.lon}"
+  },
+  "hasMap": "${company.companyJson.addressLink}",
+   "openingHours": "Mo 08:00-17:00 Tu 08:00-17:00 We 08:00-17:00 Th 08:00-17:00 Fr 08:00-17:00 Sa 08:00-17:00 Su 08:00-17:00",
+  "telephone": "${company.companyPhone}"
+}`
+    };
+  };
   return (
     <Fragment>
       <Head>
