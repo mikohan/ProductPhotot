@@ -95,7 +95,7 @@ const NavbarPhoto: FC<NavbarProps> = (props) => {
             </li>
 
             {/* =============================== About item ================== */}
-            <ListItemLink href={url.portfolio()} title="Portfolio" />
+            {/* <ListItemLink href={url.portfolio()} title="Portfolio" /> */}
 
             {/* =============================== About item ================== */}
             <ListItemLink href={url.about()} title="About" />
