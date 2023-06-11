@@ -19,6 +19,7 @@ import { ProjectCard1 } from 'components/reuseable/project-cards';
 // -------- data -------- //
 import { gallery, projectList1 } from 'data/project';
 import { company } from 'data/company-info';
+
 const images = ['/img/photos/pp2.jpg', '/img/photos/pp3.jpg', '/img/photos/pp4.jpg', '/img/photos/pp5.jpg'];
 
 const ProjectDetails: NextPage = () => {
