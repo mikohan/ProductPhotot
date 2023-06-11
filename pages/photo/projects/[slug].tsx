@@ -78,9 +78,9 @@ const ProjectDetails: NextPage = () => {
                     <NextLink title="Identity" href="#" className="hover" />
                   </div>
 
-                  <h1 className="display-1 mb-3">Commodo Dolor Bibendum Parturient Cursus Mollis</h1>
+                  <h1 className="display-1 mb-3">One of the project in a car photography.</h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere. Maecenas faucibus mollis interdum.
+                    Exterior, interior and some details of the beautiful BMW.
                   </p>
                 </div>
               </div>
@@ -100,7 +100,13 @@ const ProjectDetails: NextPage = () => {
                     className="rounded mb-8 mb-md-12"
                   />
 
-                  <ProjectDetailsContent title="About the Project" />
+                  <ProjectDetailsContent
+                    title="About the Project"
+                    content={`Four decades of design and engineering expertise made the BMW 5 Series synonymous with success.
+                    Intelligent driver assistance technology and refined luxury touches ensure this powerful sedan’s executive status.`}
+                    projectClient="Anton"
+                    projectDate="06 June 2023"
+                  />
 
                   <div className="row mt-5 gx-md-6 gy-6">
                     {images.map((item) => (
@@ -133,22 +139,11 @@ const ProjectDetails: NextPage = () => {
 
                   <div className="row mt-8 mt-md-12">
                     <div className="col-md-10 offset-md-1 text-justify">
-                      <h2 className="mb-4">Quam Mollis Bibendum</h2>
+                      <h2 className="mb-4">BMW 530i</h2>
                       <p>
-                        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non
-                        metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia
-                        bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Praesent commodo cursus
-                        magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.
-                        Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet
-                        fermentum.
-                      </p>
-
-                      <p>
-                        Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat
-                        porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Maecenas
-                        sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
-                        vestibulum at eros. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum
-                        etiam porta.
+                        Four decades of design and engineering expertise made the BMW 5 Series synonymous with success.
+                        Intelligent driver assistance technology and refined luxury touches ensure this powerful sedan’s
+                        executive status.
                       </p>
                     </div>
                   </div>
@@ -159,7 +154,7 @@ const ProjectDetails: NextPage = () => {
         </section>
 
         {/* ========== navigation section ========== */}
-        <ProjectDetailsNavigation />
+        {/* <ProjectDetailsNavigation /> */}
       </main>
 
       {/* ========== footer section ========== */}
