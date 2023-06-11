@@ -20,7 +20,29 @@ import { ProjectCard1 } from 'components/reuseable/project-cards';
 import { gallery, projectList1 } from 'data/project';
 import { company } from 'data/company-info';
 
-const images = ['/img/photos/pp2.jpg', '/img/photos/pp3.jpg', '/img/photos/pp4.jpg', '/img/photos/pp5.jpg'];
+const images = [
+  '/img/portfolio_cars/bmw_white_2018/002.jpg',
+  '/img/portfolio_cars/bmw_white_2018/003.jpg',
+  '/img/portfolio_cars/bmw_white_2018/004.jpg',
+  '/img/portfolio_cars/bmw_white_2018/005.jpg',
+  '/img/portfolio_cars/bmw_white_2018/006.jpg',
+  '/img/portfolio_cars/bmw_white_2018/007.jpg',
+  '/img/portfolio_cars/bmw_white_2018/008.jpg',
+  '/img/portfolio_cars/bmw_white_2018/009.jpg',
+  '/img/portfolio_cars/bmw_white_2018/010.jpg',
+  '/img/portfolio_cars/bmw_white_2018/011.jpg',
+  '/img/portfolio_cars/bmw_white_2018/012.jpg',
+  '/img/portfolio_cars/bmw_white_2018/013.jpg',
+  '/img/portfolio_cars/bmw_white_2018/014.jpg',
+  '/img/portfolio_cars/bmw_white_2018/015.jpg',
+  '/img/portfolio_cars/bmw_white_2018/016.jpg',
+  '/img/portfolio_cars/bmw_white_2018/017.jpg',
+  '/img/portfolio_cars/bmw_white_2018/018.jpg',
+  '/img/portfolio_cars/bmw_white_2018/019.jpg',
+  '/img/portfolio_cars/bmw_white_2018/021.jpg',
+  '/img/portfolio_cars/bmw_white_2018/022.jpg',
+  '/img/portfolio_cars/bmw_white_2018/023.jpg'
+];
 
 const ProjectDetails: NextPage = () => {
   // used for image lightbox
@@ -71,7 +93,12 @@ const ProjectDetails: NextPage = () => {
             <div className="row">
               <div className="col-12">
                 <article className="mt-n21">
-                  <FigureImage width={2400} height={1640} src="/img/photos/pp1.jpg" className="rounded mb-8 mb-md-12" />
+                  <FigureImage
+                    width={2400}
+                    height={1640}
+                    src="/img/portfolio_cars/bmw_white_2018/cover.jpg"
+                    className="rounded mb-8 mb-md-12"
+                  />
 
                   <ProjectDetailsContent title="About the Project" />
 
