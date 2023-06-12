@@ -66,31 +66,31 @@ export const gallery = {
 export const projectList1 = [
   {
     id: 1,
-    link: 'bmw-car-photos-project',
+    link: '#',
     category: 'CARS',
     title: 'BMW 530i M Sport',
     description: 'One of the our project BMW 5 series.',
     images: [
       {
-        width: 960,
-        height: 640,
-        url: '/img/portfolio_cars/bmw_white_2018/002.jpg',
-        tooltip: 'BMW White One',
-        full: '/img/portfolio_cars/bmw_white_2018/002.jpg'
+        width: 900,
+        height: 800,
+        url: '/img/photos/cs1.jpg',
+        tooltip: 'Purus Tellus Magna',
+        full: '/img/photos/cs1-full.jpg'
       },
       {
-        width: 960,
-        height: 640,
-        url: '/img/portfolio_cars/bmw_white_2018/004.jpg',
-        tooltip: 'BMW White Two',
-        full: '/img/portfolio_cars/bmw_white_2018/004.jpg'
+        width: 900,
+        height: 900,
+        url: '/img/photos/cs2.jpg',
+        full: '/img/photos/cs2-full.jpg',
+        tooltip: 'Fusce Ipsum Vestibulum'
       },
       {
-        width: 960,
-        height: 640,
-        url: '/img/portfolio_cars/bmw_white_2018/011.jpg',
-        tooltip: 'BMW Whit Three',
-        full: '/img/portfolio_cars/bmw_white_2018/011.jpg'
+        width: 900,
+        height: 718,
+        url: '/img/photos/cs3.jpg',
+        full: '/img/photos/cs3-full.jpg',
+        tooltip: 'Condimentum Parturient Ligula'
       }
     ]
   },

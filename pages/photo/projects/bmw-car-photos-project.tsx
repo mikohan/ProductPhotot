@@ -38,10 +38,11 @@ const images = [
   '/img/portfolio_cars/bmw_white_2018/016.jpg',
   '/img/portfolio_cars/bmw_white_2018/017.jpg',
   '/img/portfolio_cars/bmw_white_2018/018.jpg',
-  '/img/portfolio_cars/bmw_white_2018/019.jpg',
   '/img/portfolio_cars/bmw_white_2018/021.jpg',
   '/img/portfolio_cars/bmw_white_2018/022.jpg',
-  '/img/portfolio_cars/bmw_white_2018/023.jpg'
+  '/img/portfolio_cars/bmw_white_2018/023.jpg',
+  '/img/portfolio_cars/bmw_white_2018/019.jpg',
+  '/img/portfolio_cars/bmw_white_2018/001.jpg'
 ];
 
 const ProjectDetails: NextPage = () => {

@@ -12,10 +12,162 @@ import useIsotope from 'hooks/useIsotope';
 import useLightBox from 'hooks/useLightBox';
 import useTooltip from 'hooks/useTooltip';
 // -------- data -------- //
-import { projectList1 } from 'data/project';
 import { company } from 'data/company-info';
 import Button from 'components/elements/NavbarButton';
 import { env } from 'process';
+
+const projectList1 = [
+  {
+    id: 1,
+    link: 'bmw-car-photos-project',
+    category: 'CARS',
+    title: 'BMW 530i M Sport',
+    description: 'One of the our project BMW 5 series.',
+    images: [
+      {
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_white_2018/002.jpg',
+        tooltip: 'BMW White One',
+        full: '/img/portfolio_cars/bmw_white_2018/002.jpg'
+      },
+      {
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_white_2018/004.jpg',
+        tooltip: 'BMW White Two',
+        full: '/img/portfolio_cars/bmw_white_2018/004.jpg'
+      },
+      {
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_white_2018/011.jpg',
+        tooltip: 'BMW Whit Three',
+        full: '/img/portfolio_cars/bmw_white_2018/011.jpg'
+      }
+    ]
+  }
+  // {
+  //   id: 2,
+  //   link: 'second-car-photography-project',
+  //   category: 'CONCEPT',
+  //   title: 'Vulputate Sollicitudin',
+  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+  //   images: [
+  //     {
+  //       width: 900,
+  //       height: 700,
+  //       url: '/img/photos/cs4.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/photos/cs4-full.jpg'
+  //     },
+  //     {
+  //       width: 800,
+  //       height: 700,
+  //       url: '/img/photos/cs5.jpg',
+  //       full: '/img/photos/cs5-full.jpg',
+  //       tooltip: 'Fusce Ipsum Vestibulum'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 700,
+  //       url: '/img/photos/cs6.jpg',
+  //       full: '/img/photos/cs6-full.jpg',
+  //       tooltip: 'Condimentum Parturient Ligula'
+  //     }
+  //   ]
+  // }
+  // {
+  //   id: 3,
+  //   link: '#',
+  //   category: 'STILL LIFE',
+  //   title: 'Vulputate Sollicitudin',
+  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+  //   images: [
+  //     {
+  //       width: 900,
+  //       height: 600,
+  //       url: '/img/photos/cs7.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/photos/cs7-full.jpg'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 600,
+  //       url: '/img/photos/cs8.jpg',
+  //       full: '/img/photos/cs8-full.jpg',
+  //       tooltip: 'Fusce Ipsum Vestibulum'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 633,
+  //       url: '/img/photos/cs9.jpg',
+  //       full: '/img/photos/cs9-full.jpg',
+  //       tooltip: 'Condimentum Parturient Ligula'
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 4,
+  //   link: '#',
+  //   category: 'WORKSHOP',
+  //   title: 'Ornare Commodo Mollis',
+  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+  //   images: [
+  //     {
+  //       width: 900,
+  //       height: 630,
+  //       url: '/img/photos/cs10.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/photos/cs10-full.jpg'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 655,
+  //       url: '/img/photos/cs11.jpg',
+  //       full: '/img/photos/cs11-full.jpg',
+  //       tooltip: 'Fusce Ipsum Vestibulum'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 630,
+  //       url: '/img/photos/cs12.jpg',
+  //       full: '/img/photos/cs12-full.jpg',
+  //       tooltip: 'Condimentum Parturient Ligula'
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 5,
+  //   link: '#',
+  //   category: 'TOOLS & TOYS',
+  //   title: 'Porta Tortor Vulputate',
+  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+  //   images: [
+  //     {
+  //       width: 900,
+  //       height: 600,
+  //       url: '/img/photos/cs13.jpg',
+  //       tooltip: 'Purus Tellus Magna',
+  //       full: '/img/photos/cs13-full.jpg'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 600,
+  //       url: '/img/photos/cs14.jpg',
+  //       tooltip: 'Fusce Ipsum Vestibulum',
+  //       full: '/img/photos/cs14-full.jpg'
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 601,
+  //       url: '/img/photos/cs15.jpg',
+  //       full: '/img/photos/cs15-full.jpg',
+  //       tooltip: 'Condimentum Parturient Ligula'
+  //     }
+  //   ]
+  // }
+];
 
 const Projects: NextPage = () => {
   // used for masonry layout

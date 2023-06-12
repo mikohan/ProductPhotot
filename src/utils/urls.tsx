@@ -25,11 +25,11 @@ export const projectsNavigation = [
     title: 'Our All Services',
     children: [
       { id: 1, title: 'Product Photography', url: url.serviceProduct(), show: true },
-      { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon(), show: true },
-      { id: 3, title: 'Juwelry Photography', url: url.serviceAmazon(), show: true },
+      { id: 2, title: 'Amazon (Ecommerce) Photography', url: url.serviceAmazon(), show: false },
+      { id: 3, title: 'Juwelry Photography', url: url.serviceAmazon(), show: false },
       { id: 4, title: 'Cars Photography', url: url.serviceCars(), show: true },
-      { id: 5, title: 'Food Photography', url: url.serviceFood(), show: true },
-      { id: 6, title: 'Real Estate Photography', url: url.serviceRealEstate(), show: true },
+      { id: 5, title: 'Food Photography', url: url.serviceFood(), show: false },
+      { id: 6, title: 'Real Estate Photography', url: url.serviceRealEstate(), show: false },
       { id: 7, title: 'Video Production', url: url.serviceVideo(), show: true }
     ]
   }
