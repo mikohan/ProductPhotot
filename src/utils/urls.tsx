@@ -19,6 +19,7 @@ export const url = {
   serviceCars: () => `/photo/cars-photography`,
   projectSingle: (slug: string) => `/photo/projects/${slug}`
 };
+// commetn:w
 
 export const projectsNavigation = [
   {
