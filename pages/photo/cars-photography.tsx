@@ -46,37 +46,37 @@ const projectList1 = [
         full: '/img/portfolio_cars/bmw_white_2018/011.jpg'
       }
     ]
+  },
+  {
+    id: 2,
+    link: 'colored-car-photography-project',
+    category: 'CONCEPT',
+    title: 'Vulputate Sollicitudin',
+    description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+    images: [
+      {
+        width: 900,
+        height: 700,
+        url: '/img/photos/cs4.jpg',
+        tooltip: 'Purus Tellus Magna',
+        full: '/img/photos/cs4-full.jpg'
+      },
+      {
+        width: 800,
+        height: 700,
+        url: '/img/photos/cs5.jpg',
+        full: '/img/photos/cs5-full.jpg',
+        tooltip: 'Fusce Ipsum Vestibulum'
+      },
+      {
+        width: 900,
+        height: 700,
+        url: '/img/photos/cs6.jpg',
+        full: '/img/photos/cs6-full.jpg',
+        tooltip: 'Condimentum Parturient Ligula'
+      }
+    ]
   }
-  // {
-  //   id: 2,
-  //   link: 'second-car-photography-project',
-  //   category: 'CONCEPT',
-  //   title: 'Vulputate Sollicitudin',
-  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
-  //   images: [
-  //     {
-  //       width: 900,
-  //       height: 700,
-  //       url: '/img/photos/cs4.jpg',
-  //       tooltip: 'Purus Tellus Magna',
-  //       full: '/img/photos/cs4-full.jpg'
-  //     },
-  //     {
-  //       width: 800,
-  //       height: 700,
-  //       url: '/img/photos/cs5.jpg',
-  //       full: '/img/photos/cs5-full.jpg',
-  //       tooltip: 'Fusce Ipsum Vestibulum'
-  //     },
-  //     {
-  //       width: 900,
-  //       height: 700,
-  //       url: '/img/photos/cs6.jpg',
-  //       full: '/img/photos/cs6-full.jpg',
-  //       tooltip: 'Condimentum Parturient Ligula'
-  //     }
-  //   ]
-  // }
   // {
   //   id: 3,
   //   link: '#',
