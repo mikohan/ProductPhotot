@@ -55,25 +55,25 @@ const projectList1 = [
     description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
     images: [
       {
-        width: 900,
-        height: 700,
-        url: '/img/photos/cs4.jpg',
-        tooltip: 'Purus Tellus Magna',
-        full: '/img/photos/cs4-full.jpg'
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_colored/001.jpg',
+        tooltip: 'Bmw light blue',
+        full: '/img/portfolio_cars/bmw_colored/001.jpg'
       },
       {
-        width: 800,
-        height: 700,
-        url: '/img/photos/cs5.jpg',
-        full: '/img/photos/cs5-full.jpg',
-        tooltip: 'Fusce Ipsum Vestibulum'
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_colored/002.jpg',
+        full: '/img/portfolio_cars/bmw_colored/002.jpg',
+        tooltip: 'BMW blue'
       },
       {
-        width: 900,
-        height: 700,
-        url: '/img/photos/cs6.jpg',
-        full: '/img/photos/cs6-full.jpg',
-        tooltip: 'Condimentum Parturient Ligula'
+        width: 960,
+        height: 640,
+        url: '/img/portfolio_cars/bmw_colored/003.jpg',
+        full: '/img/portfolio_cars/bmw_colored/003.jpg',
+        tooltip: 'BMW Pink'
       }
     ]
   }
