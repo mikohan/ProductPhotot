@@ -20,7 +20,7 @@ const projectList1 = [
   {
     id: 1,
     link: 'bmw-car-photos-project',
-    category: 'CARS',
+    category: 'CAR',
     title: 'BMW 530i M Sport',
     description: 'One of the our project BMW 5 series.',
     images: [
@@ -50,9 +50,9 @@ const projectList1 = [
   {
     id: 2,
     link: 'colored-car-photography-project',
-    category: 'CONCEPT',
-    title: 'Vulputate Sollicitudin',
-    description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+    category: 'CAR',
+    title: 'Nigh project car photography',
+    description: 'Some photos from our night project.',
     images: [
       {
         width: 960,
