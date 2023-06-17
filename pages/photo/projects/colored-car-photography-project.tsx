@@ -21,28 +21,14 @@ import { gallery, projectList1 } from 'data/project';
 import { company } from 'data/company-info';
 
 const images = [
-  '/img/portfolio_cars/bmw_white_2018/002.jpg',
-  '/img/portfolio_cars/bmw_white_2018/003.jpg',
-  '/img/portfolio_cars/bmw_white_2018/004.jpg',
-  '/img/portfolio_cars/bmw_white_2018/005.jpg',
-  '/img/portfolio_cars/bmw_white_2018/006.jpg',
-  '/img/portfolio_cars/bmw_white_2018/007.jpg',
-  '/img/portfolio_cars/bmw_white_2018/008.jpg',
-  '/img/portfolio_cars/bmw_white_2018/009.jpg',
-  '/img/portfolio_cars/bmw_white_2018/010.jpg',
-  '/img/portfolio_cars/bmw_white_2018/011.jpg',
-  '/img/portfolio_cars/bmw_white_2018/012.jpg',
-  '/img/portfolio_cars/bmw_white_2018/013.jpg',
-  '/img/portfolio_cars/bmw_white_2018/014.jpg',
-  '/img/portfolio_cars/bmw_white_2018/015.jpg',
-  '/img/portfolio_cars/bmw_white_2018/016.jpg',
-  '/img/portfolio_cars/bmw_white_2018/017.jpg',
-  '/img/portfolio_cars/bmw_white_2018/018.jpg',
-  '/img/portfolio_cars/bmw_white_2018/021.jpg',
-  '/img/portfolio_cars/bmw_white_2018/022.jpg',
-  '/img/portfolio_cars/bmw_white_2018/023.jpg',
-  '/img/portfolio_cars/bmw_white_2018/019.jpg',
-  '/img/portfolio_cars/bmw_white_2018/001.jpg'
+  '/img/portfolio_cars/bmw_colored/001.jpg',
+  '/img/portfolio_cars/bmw_colored/002.jpg',
+  '/img/portfolio_cars/bmw_colored/003.jpg',
+  '/img/portfolio_cars/bmw_colored/004.jpg',
+  '/img/portfolio_cars/bmw_colored/005.jpg',
+  '/img/portfolio_cars/bmw_colored/006.jpg',
+  '/img/portfolio_cars/bmw_colored/007.jpg',
+  '/img/portfolio_cars/bmw_colored/008.jpg'
 ];
 
 const ProjectDetails: NextPage = () => {
@@ -79,10 +65,8 @@ const ProjectDetails: NextPage = () => {
                     <NextLink title="Identity" href="#" className="hover" />
                   </div>
 
-                  <h1 className="display-1 mb-3">One of the project in a car photography.</h1>
-                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Exterior, interior and some details of the beautiful BMW.
-                  </p>
+                  <h1 className="display-1 mb-3">One of the project Night Color Painting.</h1>
+                  <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">One of the project made at night.</p>
                 </div>
               </div>
             </div>
@@ -97,7 +81,7 @@ const ProjectDetails: NextPage = () => {
                   <FigureImage
                     width={2400}
                     height={1640}
-                    src="/img/portfolio_cars/bmw_white_2018/cover.jpg"
+                    src="/img/portfolio_cars/bmw_colored/cover.jpg"
                     className="rounded mb-8 mb-md-12"
                   />
 
@@ -126,7 +110,7 @@ const ProjectDetails: NextPage = () => {
                       </div>
                     ))}
                   </div>
-                  <div className="row mt-5 gx-md-6 gy-6">
+                  {/* <div className="row mt-5 gx-md-6 gy-6">
                     <Plyr
                       poster="/img/photos/pp2.jpg"
                       options={{
@@ -136,7 +120,7 @@ const ProjectDetails: NextPage = () => {
                       }}
                       source={{ type: 'video', sources: [{ src: '6PfAEJIbm_A', provider: 'youtube' }] }}
                     />
-                  </div>
+                  </div> */}
 
                   <div className="row mt-8 mt-md-12">
                     <div className="col-md-10 offset-md-1 text-justify">
