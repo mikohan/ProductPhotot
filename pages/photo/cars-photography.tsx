@@ -49,7 +49,7 @@ const projectList1 = [
   },
   {
     id: 2,
-    link: 'colored-car-photography-project',
+    link: 'colored-car-photography-project', // second project
     category: 'CAR',
     title: 'Colored car night project',
     description: 'Some photos from our night project.',
