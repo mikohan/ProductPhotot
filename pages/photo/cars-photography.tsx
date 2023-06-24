@@ -87,23 +87,23 @@ const projectList1 = [
       {
         width: 960,
         height: 640,
-        url: '/img/portfolio_cars/mercedes_sacha/001.jpg',
+        url: '/img/portfolio_cars/mercedes_sasha/001.jpg',
         tooltip: 'Mersedes white',
-        full: '/img/portfolio_cars/mercedes_sacha/001.jpg'
+        full: '/img/portfolio_cars/mercedes_sasha/001.jpg'
       },
       {
         width: 960,
         height: 640,
-        url: '/img/portfolio_cars/mercedes_sacha/011.jpg',
+        url: '/img/portfolio_cars/mercedes_sasha/005.jpg',
         tooltip: 'Mersedes white',
-        full: '/img/portfolio_cars/mercedes_sacha/011.jpg'
+        full: '/img/portfolio_cars/mercedes_sasha/005.jpg'
       },
       {
         width: 960,
         height: 640,
-        url: '/img/portfolio_cars/mercedes_sacha/006.jpg',
+        url: '/img/portfolio_cars/mercedes_sasha/010.jpg',
         tooltip: 'Mersedes white',
-        full: '/img/portfolio_cars/mercedes_sacha/006.jpg'
+        full: '/img/portfolio_cars/mercedes_sasha/010.jpg'
       }
     ]
   }
