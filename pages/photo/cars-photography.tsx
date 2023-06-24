@@ -76,67 +76,67 @@ const projectList1 = [
         tooltip: 'BMW Pink'
       }
     ]
+  },
+  {
+    id: 3,
+    link: 'mercedes-car-photography',
+    category: 'CAR',
+    title: 'Mercedes Car Photography Project',
+    description: 'Project of Car Photography. Perfect Mercedes C300',
+    images: [
+      {
+        width: 900,
+        height: 600,
+        url: '/img/photos/cs7.jpg',
+        tooltip: 'Purus Tellus Magna',
+        full: '/img/photos/cs7-full.jpg'
+      },
+      {
+        width: 900,
+        height: 600,
+        url: '/img/photos/cs8.jpg',
+        full: '/img/photos/cs8-full.jpg',
+        tooltip: 'Fusce Ipsum Vestibulum'
+      },
+      {
+        width: 900,
+        height: 633,
+        url: '/img/photos/cs9.jpg',
+        full: '/img/photos/cs9-full.jpg',
+        tooltip: 'Condimentum Parturient Ligula'
+      }
+    ]
+  },
+  {
+    id: 4,
+    link: '#',
+    category: 'WORKSHOP',
+    title: 'Ornare Commodo Mollis',
+    description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+    images: [
+      {
+        width: 900,
+        height: 630,
+        url: '/img/photos/cs10.jpg',
+        tooltip: 'Purus Tellus Magna',
+        full: '/img/photos/cs10-full.jpg'
+      },
+      {
+        width: 900,
+        height: 655,
+        url: '/img/photos/cs11.jpg',
+        full: '/img/photos/cs11-full.jpg',
+        tooltip: 'Fusce Ipsum Vestibulum'
+      },
+      {
+        width: 900,
+        height: 630,
+        url: '/img/photos/cs12.jpg',
+        full: '/img/photos/cs12-full.jpg',
+        tooltip: 'Condimentum Parturient Ligula'
+      }
+    ]
   }
-  // {
-  //   id: 3,
-  //   link: '#',
-  //   category: 'STILL LIFE',
-  //   title: 'Vulputate Sollicitudin',
-  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
-  //   images: [
-  //     {
-  //       width: 900,
-  //       height: 600,
-  //       url: '/img/photos/cs7.jpg',
-  //       tooltip: 'Purus Tellus Magna',
-  //       full: '/img/photos/cs7-full.jpg'
-  //     },
-  //     {
-  //       width: 900,
-  //       height: 600,
-  //       url: '/img/photos/cs8.jpg',
-  //       full: '/img/photos/cs8-full.jpg',
-  //       tooltip: 'Fusce Ipsum Vestibulum'
-  //     },
-  //     {
-  //       width: 900,
-  //       height: 633,
-  //       url: '/img/photos/cs9.jpg',
-  //       full: '/img/photos/cs9-full.jpg',
-  //       tooltip: 'Condimentum Parturient Ligula'
-  //     }
-  //   ]
-  // },
-  // {
-  //   id: 4,
-  //   link: '#',
-  //   category: 'WORKSHOP',
-  //   title: 'Ornare Commodo Mollis',
-  //   description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
-  //   images: [
-  //     {
-  //       width: 900,
-  //       height: 630,
-  //       url: '/img/photos/cs10.jpg',
-  //       tooltip: 'Purus Tellus Magna',
-  //       full: '/img/photos/cs10-full.jpg'
-  //     },
-  //     {
-  //       width: 900,
-  //       height: 655,
-  //       url: '/img/photos/cs11.jpg',
-  //       full: '/img/photos/cs11-full.jpg',
-  //       tooltip: 'Fusce Ipsum Vestibulum'
-  //     },
-  //     {
-  //       width: 900,
-  //       height: 630,
-  //       url: '/img/photos/cs12.jpg',
-  //       full: '/img/photos/cs12-full.jpg',
-  //       tooltip: 'Condimentum Parturient Ligula'
-  //     }
-  //   ]
-  // },
   // {
   //   id: 5,
   //   link: '#',
