@@ -12,7 +12,7 @@ import useIsotope from 'hooks/useIsotope';
 import useLightBox from 'hooks/useLightBox';
 import useTooltip from 'hooks/useTooltip';
 // -------- data -------- //
-import { projectList1 } from 'data/project';
+import { jewelryPhotographyProjects, projectList1 } from 'data/project';
 import { company } from 'data/company-info';
 import Button from 'components/elements/NavbarButton';
 
@@ -27,10 +27,10 @@ const Projects: NextPage = () => {
   return (
     <Fragment>
       <Head>
-        <title>{`Juwelry Photography Services - ${company.companyName}`}</title>
+        <title>{`Jewelry Photography Services - ${company.companyName}`}</title>
         <meta
           name="description"
-          content={`Juwelry Photography & General Ecommers product photography - ${company.companyName}`}
+          content={`Jewelry Photography & General Ecommers product photography - ${company.companyName}`}
         />
       </Head>
       <PageProgress />
@@ -47,7 +47,7 @@ const Projects: NextPage = () => {
             <div className="container py-13 py-md-17 text-center">
               <div className="row">
                 <div className="col-lg-10 col-xxl-8 mx-auto">
-                  <h1 className="display-1 mb-1">Product Photography for Amazon and Ecommerce Service</h1>
+                  <h1 className="display-1 mb-1">Jewelry Photography</h1>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Projects: NextPage = () => {
             <div className="row mt-6">
               <div className="col-xl-10 mx-auto">
                 <div className="projects-tiles">
-                  {projectList1.map((item) => (
+                  {jewelryPhotographyProjects.map((item) => (
                     <ProjectCard1 {...item} key={item.id} />
                   ))}
                 </div>

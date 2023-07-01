@@ -215,3 +215,37 @@ export const projectList1 = [
     ]
   }
 ];
+
+// Jewelry photography
+export const jewelryPhotographyProjects = [
+  {
+    id: 1,
+    link: 'portfolio-jewerly',
+    category: 'Jewelry',
+    title: 'Jewelry Photography',
+    description: 'Jewelry Photography',
+    images: [
+      {
+        width: 900,
+        height: 700,
+        url: '/img/portfolio_product/jew-0001.jpg',
+        tooltip: 'Purus Tellus Magna',
+        full: '/img/portfolio_product/jew-0001.jpg'
+      },
+      {
+        width: 800,
+        height: 700,
+        url: '/img/portfolio_product/jew-0003.jpg',
+        full: '/img/portfolio_product/jew-0003.jpg',
+        tooltip: 'Fusce Ipsum Vestibulum'
+      },
+      {
+        width: 900,
+        height: 700,
+        url: '/img/portfolio_product/jew-0004.jpg',
+        full: '/img/portfolio_product/jew-0004.jpg',
+        tooltip: 'Condimentum Parturient Ligula'
+      }
+    ]
+  }
+];
