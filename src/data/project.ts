@@ -66,60 +66,60 @@ export const gallery = {
 export const projectList1 = [
   {
     id: 1,
-    link: '#',
-    category: 'CARS',
-    title: 'BMW 530i M Sport',
-    description: 'One of the our project BMW 5 series.',
+    link: 'portfolio-product',
+    category: 'PRODUCT',
+    title: 'Product photography',
+    description: 'One of the our project for Amazon shop.',
     images: [
       {
         width: 900,
         height: 800,
-        url: '/img/photos/cs1.jpg',
+        url: '/img/portfolio_product/0003.jpg',
         tooltip: 'Purus Tellus Magna',
-        full: '/img/photos/cs1-full.jpg'
+        full: '/img/photos/0003.jpg'
       },
       {
         width: 900,
         height: 900,
-        url: '/img/photos/cs2.jpg',
-        full: '/img/photos/cs2-full.jpg',
+        url: '/img/portfolio_product/0002.jpg',
+        full: '/img/photos/0002.jpg',
         tooltip: 'Fusce Ipsum Vestibulum'
       },
       {
         width: 900,
         height: 718,
-        url: '/img/photos/cs3.jpg',
-        full: '/img/photos/cs3-full.jpg',
+        url: '/img/portfolio_product/0001.jpg',
+        full: '/img/portfolio_product/0001.jpg',
         tooltip: 'Condimentum Parturient Ligula'
       }
     ]
   },
   {
     id: 2,
-    link: '#',
-    category: 'CONCEPT',
-    title: 'Vulputate Sollicitudin',
-    description: 'Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.',
+    link: 'portfolio-jewerly',
+    category: 'Jewelry',
+    title: 'Jewelry Photography',
+    description: 'Jewelry Photography',
     images: [
       {
         width: 900,
         height: 700,
-        url: '/img/photos/cs4.jpg',
+        url: '/img/portfolio_product/jew-0001.jpg',
         tooltip: 'Purus Tellus Magna',
-        full: '/img/photos/cs4-full.jpg'
+        full: '/img/portfolio_product/jew-0001.jpg'
       },
       {
         width: 800,
         height: 700,
-        url: '/img/photos/cs5.jpg',
-        full: '/img/photos/cs5-full.jpg',
+        url: '/img/portfolio_product/jew-0003.jpg',
+        full: '/img/portfolio_product/jew-0003.jpg',
         tooltip: 'Fusce Ipsum Vestibulum'
       },
       {
         width: 900,
         height: 700,
-        url: '/img/photos/cs6.jpg',
-        full: '/img/photos/cs6-full.jpg',
+        url: '/img/portfolio_product/jew-0004.jpg',
+        full: '/img/portfolio_product/jew-0004.jpg',
         tooltip: 'Condimentum Parturient Ligula'
       }
     ]
