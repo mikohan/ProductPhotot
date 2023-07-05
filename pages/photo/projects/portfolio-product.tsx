@@ -22,15 +22,16 @@ import { company } from 'data/company-info';
 
 const images = [
 
-  '/img/portfolio_product/0001.jpg',
-  '/img/portfolio_product/0002.jpg',
-  '/img/portfolio_product/0003.jpg',
-  '/img/portfolio_product/0005.jpg',
+  '/img/portfolio_product/0004.jpg',
+  '/img/portfolio_product/0011.jpg',
   '/img/portfolio_product/0006.jpg',
-  '/img/portfolio_product/0007.jpg',
+  '/img/portfolio_product/0010.jpg',
+  '/img/portfolio_product/0002.jpg',
+  '/img/portfolio_product/0005.jpg',
   '/img/portfolio_product/0008.jpg',
   '/img/portfolio_product/0009.jpg',
-  '/img/portfolio_product/0010.jpg',
+  '/img/portfolio_product/0003.jpg',
+  '/img/portfolio_product/0001.jpg',
 ];
 
 const ProjectDetails: NextPage = () => {

@@ -75,22 +75,22 @@ export const projectList1 = [
         width: 900,
         height: 800,
         url: '/img/portfolio_product/0003.jpg',
-        tooltip: 'Purus Tellus Magna',
+        tooltip: 'Lifestyle watch',
         full: '/img/photos/0003.jpg'
       },
       {
         width: 900,
         height: 900,
-        url: '/img/portfolio_product/0002.jpg',
-        full: '/img/photos/0002.jpg',
-        tooltip: 'Fusce Ipsum Vestibulum'
+        url: '/img/portfolio_product/0004.jpg',
+        full: '/img/photos/0004.jpg',
+        tooltip: 'sunglases'
       },
       {
         width: 900,
         height: 718,
-        url: '/img/portfolio_product/0001.jpg',
-        full: '/img/portfolio_product/0001.jpg',
-        tooltip: 'Condimentum Parturient Ligula'
+        url: '/img/portfolio_product/0006.jpg',
+        full: '/img/portfolio_product/0006.jpg',
+        tooltip: 'Parfume'
       }
     ]
   },
@@ -111,8 +111,8 @@ export const projectList1 = [
       {
         width: 800,
         height: 700,
-        url: '/img/portfolio_product/jew-0003.jpg',
-        full: '/img/portfolio_product/jew-0003.jpg',
+        url: '/img/portfolio_product/jew-0007.jpg',
+        full: '/img/portfolio_product/jew-0007.jpg',
         tooltip: 'Fusce Ipsum Vestibulum'
       },
       {
