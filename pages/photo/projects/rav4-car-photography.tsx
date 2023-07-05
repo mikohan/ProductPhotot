@@ -67,7 +67,7 @@ const ProjectDetails: NextPage = () => {
                     <NextLink title="Identity" href="#" className="hover" />
                   </div>
 
-                  <h1 className="display-1 mb-3">One of the project in a car photography.</h1>
+                  <h1 className="display-1 mb-3">Our new project in a car photography.</h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
                     Exterior, interior and some details of the beautiful Rav 4.
                   </p>
