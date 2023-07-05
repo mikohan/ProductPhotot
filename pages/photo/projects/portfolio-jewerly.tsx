@@ -26,6 +26,8 @@ const images = [
   '/img/portfolio_product/jew-0002.jpg',
   '/img/portfolio_product/jew-0003.jpg',
   '/img/portfolio_product/jew-0004.jpg',
+  '/img/portfolio_product/jew-0007.jpg',
+  '/img/portfolio_product/jew-0008.jpg',
 
 ];
 
